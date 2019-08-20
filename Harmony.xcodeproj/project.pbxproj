@@ -3,25 +3,39 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1EE1885589E5E698E9537CE9 /* Pods_Harmony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4CDC836AE429DCD0D1EEC5F /* Pods_Harmony.framework */; };
 		2F074BE42309973100B5D2D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F074BE32309973100B5D2D2 /* AppDelegate.swift */; };
-		2F074BE62309973100B5D2D2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F074BE52309973100B5D2D2 /* ViewController.swift */; };
+		2F074BE62309973100B5D2D2 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F074BE52309973100B5D2D2 /* Login.swift */; };
 		2F074BE92309973100B5D2D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F074BE72309973100B5D2D2 /* Main.storyboard */; };
 		2F074BEB2309973300B5D2D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F074BEA2309973300B5D2D2 /* Assets.xcassets */; };
 		2F074BEE2309973300B5D2D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F074BEC2309973300B5D2D2 /* LaunchScreen.storyboard */; };
+		2F074BF62309993900B5D2D2 /* DesinableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F074BF52309993900B5D2D2 /* DesinableTextField.swift */; };
+		2F074BFC230AC6FC00B5D2D2 /* CustomBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F074BFB230AC6FC00B5D2D2 /* CustomBar.swift */; };
+		2F074BFE230AF6EE00B5D2D2 /* UIViewExtenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F074BFD230AF6EE00B5D2D2 /* UIViewExtenstion.swift */; };
+		2F074C02230AF97D00B5D2D2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F074C01230AF97D00B5D2D2 /* MainViewController.swift */; };
+		2F074C04230AFC2A00B5D2D2 /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F074C03230AFC2A00B5D2D2 /* MainTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2F074BE02309973100B5D2D2 /* Harmony.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Harmony.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F074BE32309973100B5D2D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2F074BE52309973100B5D2D2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2F074BE52309973100B5D2D2 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		2F074BE82309973100B5D2D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2F074BEA2309973300B5D2D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2F074BED2309973300B5D2D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2F074BEF2309973300B5D2D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F074BF52309993900B5D2D2 /* DesinableTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesinableTextField.swift; sourceTree = "<group>"; };
+		2F074BFB230AC6FC00B5D2D2 /* CustomBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBar.swift; sourceTree = "<group>"; };
+		2F074BFD230AF6EE00B5D2D2 /* UIViewExtenstion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtenstion.swift; sourceTree = "<group>"; };
+		2F074C01230AF97D00B5D2D2 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		2F074C03230AFC2A00B5D2D2 /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
+		924D487F0395A0B4255A8014 /* Pods-Harmony.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Harmony.debug.xcconfig"; path = "Target Support Files/Pods-Harmony/Pods-Harmony.debug.xcconfig"; sourceTree = "<group>"; };
+		B4CDC836AE429DCD0D1EEC5F /* Pods_Harmony.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Harmony.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C67A77F8AC2B0B5B08BE75CA /* Pods-Harmony.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Harmony.release.xcconfig"; path = "Target Support Files/Pods-Harmony/Pods-Harmony.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1EE1885589E5E698E9537CE9 /* Pods_Harmony.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +55,8 @@
 			children = (
 				2F074BE22309973100B5D2D2 /* Harmony */,
 				2F074BE12309973100B5D2D2 /* Products */,
+				6E386B9D1AF4DFF2B831BA64 /* Pods */,
+				C069294A7D15B708AE8A2925 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +72,67 @@
 			isa = PBXGroup;
 			children = (
 				2F074BE32309973100B5D2D2 /* AppDelegate.swift */,
-				2F074BE52309973100B5D2D2 /* ViewController.swift */,
+				2F074BFA2309AA4000B5D2D2 /* Scenes */,
 				2F074BE72309973100B5D2D2 /* Main.storyboard */,
+				2F074BF92309AA1300B5D2D2 /* Extensions */,
 				2F074BEA2309973300B5D2D2 /* Assets.xcassets */,
 				2F074BEC2309973300B5D2D2 /* LaunchScreen.storyboard */,
 				2F074BEF2309973300B5D2D2 /* Info.plist */,
 			);
 			path = Harmony;
+			sourceTree = "<group>";
+		};
+		2F074BF92309AA1300B5D2D2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2F074BF52309993900B5D2D2 /* DesinableTextField.swift */,
+				2F074BFD230AF6EE00B5D2D2 /* UIViewExtenstion.swift */,
+				2F074BFB230AC6FC00B5D2D2 /* CustomBar.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2F074BFA2309AA4000B5D2D2 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				2F074C00230AF95800B5D2D2 /* Main */,
+				2F074BFF230AF94700B5D2D2 /* Login */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		2F074BFF230AF94700B5D2D2 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				2F074BE52309973100B5D2D2 /* Login.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		2F074C00230AF95800B5D2D2 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				2F074C01230AF97D00B5D2D2 /* MainViewController.swift */,
+				2F074C03230AFC2A00B5D2D2 /* MainTableViewCell.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		6E386B9D1AF4DFF2B831BA64 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				924D487F0395A0B4255A8014 /* Pods-Harmony.debug.xcconfig */,
+				C67A77F8AC2B0B5B08BE75CA /* Pods-Harmony.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C069294A7D15B708AE8A2925 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B4CDC836AE429DCD0D1EEC5F /* Pods_Harmony.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +142,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2F074BF22309973300B5D2D2 /* Build configuration list for PBXNativeTarget "Harmony" */;
 			buildPhases = (
+				6B5D7238F3C8D5E154740676 /* [CP] Check Pods Manifest.lock */,
 				2F074BDC2309973100B5D2D2 /* Sources */,
 				2F074BDD2309973100B5D2D2 /* Frameworks */,
 				2F074BDE2309973100B5D2D2 /* Resources */,
+				50D603CE034DD0AB6712A93E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,12 +203,59 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		50D603CE034DD0AB6712A93E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Harmony/Pods-Harmony-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Harmony/Pods-Harmony-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Harmony/Pods-Harmony-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6B5D7238F3C8D5E154740676 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Harmony-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2F074BDC2309973100B5D2D2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F074BE62309973100B5D2D2 /* ViewController.swift in Sources */,
+				2F074BE62309973100B5D2D2 /* Login.swift in Sources */,
+				2F074BF62309993900B5D2D2 /* DesinableTextField.swift in Sources */,
+				2F074BFC230AC6FC00B5D2D2 /* CustomBar.swift in Sources */,
+				2F074C04230AFC2A00B5D2D2 /* MainTableViewCell.swift in Sources */,
+				2F074C02230AF97D00B5D2D2 /* MainViewController.swift in Sources */,
+				2F074BFE230AF6EE00B5D2D2 /* UIViewExtenstion.swift in Sources */,
 				2F074BE42309973100B5D2D2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,6 +400,7 @@
 		};
 		2F074BF32309973300B5D2D2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 924D487F0395A0B4255A8014 /* Pods-Harmony.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -297,6 +418,7 @@
 		};
 		2F074BF42309973300B5D2D2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C67A77F8AC2B0B5B08BE75CA /* Pods-Harmony.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
