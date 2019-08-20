@@ -320,10 +320,10 @@
             </objects>
             <point key="canvasLocation" x="973.91304347826099" y="141.96428571428569"/>
         </scene>
-        <!--Main View Controller-->
+        <!--Filter View Controller-->
         <scene sceneID="PUv-Ib-yXp">
             <objects>
-                <viewController id="hfA-T0-DGx" customClass="MainViewController" customModule="Harmony" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="hfA-T0-DGx" customClass="FilterViewController" customModule="Harmony" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" ambiguous="YES" id="jx9-fI-beh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="403"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -355,7 +355,7 @@
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="awd-8a-9ls">
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="awd-8a-9ls" customClass="CustomeSlider" customModule="Harmony" customModuleProvider="target">
                                 <rect key="frame" x="8.5" y="112" width="397" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="QS8-re-e0O"/>
@@ -363,6 +363,10 @@
                                 </constraints>
                                 <color key="minimumTrackTintColor" red="0.26274509800000001" green="0.80392156859999997" blue="0.52941176469999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="maximumTrackTintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="thumbImage" value="thumbImage"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="thumbHighlitedImage" value="thumbImageHighlited"/>
+                                </userDefinedRuntimeAttributes>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What you are up to ?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qxe-37-AuX">
                                 <rect key="frame" x="29" y="167" width="158" height="20.5"/>
@@ -469,6 +473,9 @@
                             <constraint firstItem="AVj-7V-cDQ" firstAttribute="leading" secondItem="jx9-fI-beh" secondAttribute="leading" id="xWR-Nh-7bq"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="sliderBar" destination="awd-8a-9ls" id="Awg-Iy-WAl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XQY-1n-kP6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -496,5 +503,7 @@
         <image name="profile-selected" width="21" height="22"/>
         <image name="separator" width="26" height="26"/>
         <image name="sidemenuicon" width="17" height="15"/>
+        <image name="thumbImage" width="64" height="48"/>
+        <image name="thumbImageHighlited" width="17" height="14"/>
     </resources>
 </document>

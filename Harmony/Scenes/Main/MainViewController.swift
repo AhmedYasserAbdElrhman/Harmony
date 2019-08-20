@@ -16,7 +16,10 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
   override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+    NotificationCenter.default.addObserver(self,
+                                           selector: #selector(hideFilterMenu),
+                                           name: NSNotification.Name("HideFilterMenu"),
+                                           object: nil)
     }
   
   
@@ -25,11 +28,7 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     
   }
   
-  
-  @IBAction func cancelFilterButtonTapped(_ sender: Any) {
-    hideFilterMenu()
-  }
-  
+    
   
   
   
@@ -56,7 +55,7 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
       self.filterMenuConstrains.constant = 0
   }
   
-  private func hideFilterMenu() {
+  @objc private func hideFilterMenu() {
       self.filterMenuOpen = false
       self.filterMenuConstrains.constant = -490
   }

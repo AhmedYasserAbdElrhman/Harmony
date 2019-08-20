@@ -6,16 +6,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Harmony/Scenes/Main/MainViewController.swift"
-            timestampString = "588009026.27661"
+            filePath = "Harmony/Extensions/CustomSlider.swift"
+            timestampString = "588035720.005062"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "59"
-            endingLineNumber = "59"
-            landmarkName = "hideFilterMenu()"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "didSetFunc()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -25,13 +25,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Harmony/Scenes/Main/MainViewController.swift"
-            timestampString = "588009026.277328"
+            filePath = "Harmony/Extensions/CustomSlider.swift"
+            timestampString = "588035720.005895"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "62"
-            endingLineNumber = "62"
-            landmarkName = "hideFilterMenu()"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "didSetFunc()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -41,154 +41,14 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Harmony/Scenes/Main/MainViewController.swift"
-            timestampString = "588009026.27771"
+            filePath = "Harmony/Extensions/CustomSlider.swift"
+            timestampString = "588035720.006228"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "30"
-            endingLineNumber = "30"
-            landmarkName = "cancelFilterButtonTapped(_:)"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "didSetFunc()"
             landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Harmony/Scenes/Main/MainViewController.swift"
-            timestampString = "588009026.278116"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "24"
-            endingLineNumber = "24"
-            landmarkName = "filterButtonTapped(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Harmony/Scenes/Main/MainViewController.swift"
-            timestampString = "588009026.2784899"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "56"
-            endingLineNumber = "56"
-            landmarkName = "toggleFilterMenu()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Harmony/Scenes/Main/MainViewController.swift"
-            timestampString = "588009026.27891"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "14"
-            endingLineNumber = "14"
-            landmarkName = "MainViewController"
-            landmarkType = "3">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Harmony.MainViewController.filterMenuOpen.getter : Swift.Optional&lt;Swift.Bool&gt;"
-                  moduleName = "Harmony"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/biko/Documents/Projects/Harmony/Harmony/Scenes/Main/MainViewController.swift"
-                  timestampString = "588009026.539974"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "14"
-                  endingLineNumber = "14"
-                  offsetFromSymbolStart = "100">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Harmony.MainViewController.filterMenuOpen.setter : Swift.Optional&lt;Swift.Bool&gt;"
-                  moduleName = "Harmony"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/biko/Documents/Projects/Harmony/Harmony/Scenes/Main/MainViewController.swift"
-                  timestampString = "588009026.542394"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "14"
-                  endingLineNumber = "14"
-                  offsetFromSymbolStart = "119">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Harmony.MainViewController.filterMenuOpen.modify : Swift.Optional&lt;Swift.Bool&gt;"
-                  moduleName = "Harmony"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/biko/Documents/Projects/Harmony/Harmony/Scenes/Main/MainViewController.swift"
-                  timestampString = "588009026.545266"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "18">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Harmony.MainViewController.filterMenuOpen.modify : Swift.Optional&lt;Swift.Bool&gt; with unmangled suffix &quot;.resume.0&quot;"
-                  moduleName = "Harmony"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/biko/Documents/Projects/Harmony/Harmony/Scenes/Main/MainViewController.swift"
-                  timestampString = "588009026.548071"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "14"
-                  endingLineNumber = "14"
-                  offsetFromSymbolStart = "4">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Harmony.MainViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; Harmony.MainViewController"
-                  moduleName = "Harmony"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/biko/Documents/Projects/Harmony/Harmony/Scenes/Main/MainViewController.swift"
-                  timestampString = "588009026.552181"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "14"
-                  endingLineNumber = "14"
-                  offsetFromSymbolStart = "303">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Harmony.MainViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;Harmony.MainViewController&gt;"
-                  moduleName = "Harmony"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/biko/Documents/Projects/Harmony/Harmony/Scenes/Main/MainViewController.swift"
-                  timestampString = "588009026.5785739"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "14"
-                  endingLineNumber = "14"
-                  offsetFromSymbolStart = "205">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

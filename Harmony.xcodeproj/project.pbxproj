@@ -18,6 +18,8 @@
 		2F074BFE230AF6EE00B5D2D2 /* UIViewExtenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F074BFD230AF6EE00B5D2D2 /* UIViewExtenstion.swift */; };
 		2F074C02230AF97D00B5D2D2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F074C01230AF97D00B5D2D2 /* MainViewController.swift */; };
 		2F074C04230AFC2A00B5D2D2 /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F074C03230AFC2A00B5D2D2 /* MainTableViewCell.swift */; };
+		2F074C0A230C52A800B5D2D2 /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F074C09230C52A800B5D2D2 /* FilterViewController.swift */; };
+		2F074C0C230C57B200B5D2D2 /* CustomSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F074C0B230C57B200B5D2D2 /* CustomSlider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +35,8 @@
 		2F074BFD230AF6EE00B5D2D2 /* UIViewExtenstion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtenstion.swift; sourceTree = "<group>"; };
 		2F074C01230AF97D00B5D2D2 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		2F074C03230AFC2A00B5D2D2 /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
+		2F074C09230C52A800B5D2D2 /* FilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
+		2F074C0B230C57B200B5D2D2 /* CustomSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSlider.swift; sourceTree = "<group>"; };
 		924D487F0395A0B4255A8014 /* Pods-Harmony.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Harmony.debug.xcconfig"; path = "Target Support Files/Pods-Harmony/Pods-Harmony.debug.xcconfig"; sourceTree = "<group>"; };
 		B4CDC836AE429DCD0D1EEC5F /* Pods_Harmony.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Harmony.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C67A77F8AC2B0B5B08BE75CA /* Pods-Harmony.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Harmony.release.xcconfig"; path = "Target Support Files/Pods-Harmony/Pods-Harmony.release.xcconfig"; sourceTree = "<group>"; };
@@ -88,6 +92,7 @@
 				2F074BF52309993900B5D2D2 /* DesinableTextField.swift */,
 				2F074BFD230AF6EE00B5D2D2 /* UIViewExtenstion.swift */,
 				2F074BFB230AC6FC00B5D2D2 /* CustomBar.swift */,
+				2F074C0B230C57B200B5D2D2 /* CustomSlider.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -95,6 +100,7 @@
 		2F074BFA2309AA4000B5D2D2 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				2F074C08230C528B00B5D2D2 /* Filter */,
 				2F074C00230AF95800B5D2D2 /* Main */,
 				2F074BFF230AF94700B5D2D2 /* Login */,
 			);
@@ -116,6 +122,14 @@
 				2F074C03230AFC2A00B5D2D2 /* MainTableViewCell.swift */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		2F074C08230C528B00B5D2D2 /* Filter */ = {
+			isa = PBXGroup;
+			children = (
+				2F074C09230C52A800B5D2D2 /* FilterViewController.swift */,
+			);
+			path = Filter;
 			sourceTree = "<group>";
 		};
 		6E386B9D1AF4DFF2B831BA64 /* Pods */ = {
@@ -251,7 +265,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F074BE62309973100B5D2D2 /* Login.swift in Sources */,
+				2F074C0C230C57B200B5D2D2 /* CustomSlider.swift in Sources */,
 				2F074BF62309993900B5D2D2 /* DesinableTextField.swift in Sources */,
+				2F074C0A230C52A800B5D2D2 /* FilterViewController.swift in Sources */,
 				2F074BFC230AC6FC00B5D2D2 /* CustomBar.swift in Sources */,
 				2F074C04230AFC2A00B5D2D2 /* MainTableViewCell.swift in Sources */,
 				2F074C02230AF97D00B5D2D2 /* MainViewController.swift in Sources */,
