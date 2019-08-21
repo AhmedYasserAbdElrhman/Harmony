@@ -10,6 +10,8 @@ import UIKit
 
 class FilterViewController: UIViewController {
   private let sliderTextLabel = UILabel()
+  
+  //How to set label over and upove the slider thumb !!
   @IBAction func sliderMoving(_ sender: Any) {
     sliderTextLabel.text = "\(sliderBar.value)"
     self.view.addSubview(sliderTextLabel)

@@ -27,7 +27,7 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
                                            object: nil)
     }
   
-  
+  // After adding TabBarController tableviewBackground not working !!!
   func configureTableViewBackground( ){
     self.tableView.backgroundColor = tableViewBackground
     let blurEffect = UIBlurEffect(style: .extraLight)

@@ -22,6 +22,9 @@ class CustomeSlider: UISlider {
     }
   }
   
+  
+  // Changing size of the slider thumb !!
+  
   func didSetFunc() -> UIImage {
       let size = CGSize(width: 50, height: 50)
       UIGraphicsBeginImageContext(size)
