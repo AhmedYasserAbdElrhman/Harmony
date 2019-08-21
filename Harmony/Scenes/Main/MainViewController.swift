@@ -8,20 +8,36 @@
 
 import UIKit
 
+@IBDesignable
 class MainViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
   
+  @IBOutlet weak var tableView: UITableView!
   @IBOutlet var mainView: UIView!
   @IBOutlet weak var filterMenuConstrains: NSLayoutConstraint!
+  
+  @IBInspectable var tableViewBackground: UIColor?
+  @IBInspectable var cellViewBackground: UIColor?
   var filterMenuOpen: Bool!
   
   override func viewDidLoad() {
         super.viewDidLoad()
-
+//    self.tableView.backgroundColor = tableViewBackground
+    configureTableViewBackground()
     NotificationCenter.default.addObserver(self,
                                            selector: #selector(hideFilterMenu),
                                            name: NSNotification.Name("HideFilterMenu"),
                                            object: nil)
     }
+  
+  
+  func configureTableViewBackground( ){
+    self.tableView.backgroundColor = tableViewBackground
+    let blurEffect = UIBlurEffect(style: .extraLight)
+    let blurVisualEffectView = UIVisualEffectView(effect: blurEffect)
+    blurVisualEffectView.frame = self.view.frame
+    self.tableView.backgroundView = blurVisualEffectView
+
+  }
   
   
     @IBAction func filterButtonTapped(_ sender: Any) {
@@ -41,6 +57,7 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
   
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
       let cell = tableView.dequeueReusableCell(withIdentifier: "Cell") as? MainTableViewCell
+      cell?.backgroundColor = cellViewBackground
       cell!.cellImage.image = UIImage(named: "icon")
       cell!.titleLabel.text = "Great Design Lets Test"
       return cell!

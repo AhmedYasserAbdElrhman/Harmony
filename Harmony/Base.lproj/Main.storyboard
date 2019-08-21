@@ -249,7 +249,7 @@
                                                     </constraints>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                            <real key="value" value="15"/>
+                                                            <real key="value" value="0.0"/>
                                                         </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
                                                 </view>
@@ -315,9 +315,15 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ckI-fV-fgd"/>
                     </view>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="tableViewBackground">
+                            <color key="value" red="0.0" green="0.97680455450000003" blue="0.0" alpha="0.47945205479452052" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
                     <connections>
                         <outlet property="filterMenuConstrains" destination="iZm-Jx-kUj" id="mTC-TW-s12"/>
                         <outlet property="mainView" destination="Ad9-uq-wht" id="UoH-3G-gAC"/>
+                        <outlet property="tableView" destination="phk-It-cDi" id="JB7-kQ-HmC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gJj-RR-vfl" userLabel="First Responder" sceneMemberID="firstResponder"/>
