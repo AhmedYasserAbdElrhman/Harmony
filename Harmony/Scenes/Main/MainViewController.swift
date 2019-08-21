@@ -59,7 +59,7 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
                        options: .curveEaseIn,
                        animations: {
                         self.view.layoutIfNeeded()
-//                        self.mainView.alpha = 0.1
+                        self.mainView.alpha = 0.1
                         
       })
     }

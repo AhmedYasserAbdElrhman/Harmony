@@ -20,6 +20,7 @@
 		2F074C04230AFC2A00B5D2D2 /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F074C03230AFC2A00B5D2D2 /* MainTableViewCell.swift */; };
 		2F074C0A230C52A800B5D2D2 /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F074C09230C52A800B5D2D2 /* FilterViewController.swift */; };
 		2F074C0C230C57B200B5D2D2 /* CustomSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F074C0B230C57B200B5D2D2 /* CustomSlider.swift */; };
+		2F074C0F230D4FFF00B5D2D2 /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F074C0E230D4FFF00B5D2D2 /* SideMenuViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		2F074C03230AFC2A00B5D2D2 /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
 		2F074C09230C52A800B5D2D2 /* FilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
 		2F074C0B230C57B200B5D2D2 /* CustomSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSlider.swift; sourceTree = "<group>"; };
+		2F074C0E230D4FFF00B5D2D2 /* SideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
 		924D487F0395A0B4255A8014 /* Pods-Harmony.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Harmony.debug.xcconfig"; path = "Target Support Files/Pods-Harmony/Pods-Harmony.debug.xcconfig"; sourceTree = "<group>"; };
 		B4CDC836AE429DCD0D1EEC5F /* Pods_Harmony.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Harmony.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C67A77F8AC2B0B5B08BE75CA /* Pods-Harmony.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Harmony.release.xcconfig"; path = "Target Support Files/Pods-Harmony/Pods-Harmony.release.xcconfig"; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 		2F074BFA2309AA4000B5D2D2 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				2F074C0D230D4CB600B5D2D2 /* SideMenu */,
 				2F074C08230C528B00B5D2D2 /* Filter */,
 				2F074C00230AF95800B5D2D2 /* Main */,
 				2F074BFF230AF94700B5D2D2 /* Login */,
@@ -130,6 +133,14 @@
 				2F074C09230C52A800B5D2D2 /* FilterViewController.swift */,
 			);
 			path = Filter;
+			sourceTree = "<group>";
+		};
+		2F074C0D230D4CB600B5D2D2 /* SideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				2F074C0E230D4FFF00B5D2D2 /* SideMenuViewController.swift */,
+			);
+			path = SideMenu;
 			sourceTree = "<group>";
 		};
 		6E386B9D1AF4DFF2B831BA64 /* Pods */ = {
@@ -272,6 +283,7 @@
 				2F074C04230AFC2A00B5D2D2 /* MainTableViewCell.swift in Sources */,
 				2F074C02230AF97D00B5D2D2 /* MainViewController.swift in Sources */,
 				2F074BFE230AF6EE00B5D2D2 /* UIViewExtenstion.swift in Sources */,
+				2F074C0F230D4FFF00B5D2D2 /* SideMenuViewController.swift in Sources */,
 				2F074BE42309973100B5D2D2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
