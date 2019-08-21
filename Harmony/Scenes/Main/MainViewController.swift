@@ -12,11 +12,9 @@ import UIKit
 class MainViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
   
   @IBOutlet weak var tableView: UITableView!
-  @IBOutlet var mainView: UIView!
   @IBOutlet weak var filterMenuConstrains: NSLayoutConstraint!
   
   @IBInspectable var tableViewBackground: UIColor?
-  @IBInspectable var cellViewBackground: UIColor?
   var filterMenuOpen: Bool!
   
   override func viewDidLoad() {
@@ -57,8 +55,7 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
   
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
       let cell = tableView.dequeueReusableCell(withIdentifier: "Cell") as? MainTableViewCell
-      cell?.backgroundColor = cellViewBackground
-      cell!.cellImage.image = UIImage(named: "icon")
+      cell!.cellImage.image = UIImage(named: "place1")
       cell!.titleLabel.text = "Great Design Lets Test"
       return cell!
     }
@@ -76,7 +73,7 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
                        options: .curveEaseIn,
                        animations: {
                         self.view.layoutIfNeeded()
-                        self.mainView.alpha = 0.1
+//                        self.view.alpha = 0.1
                         
       })
     }
