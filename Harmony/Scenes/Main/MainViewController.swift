@@ -10,6 +10,7 @@ import UIKit
 
 class MainViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
   
+  @IBOutlet var mainView: UIView!
   @IBOutlet weak var filterMenuConstrains: NSLayoutConstraint!
   var filterMenuOpen: Bool!
   
@@ -23,10 +24,10 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
   
   
-  @IBAction func filterButtonTapped(_ sender: Any) {
-    toggleFilterMenu()
-    
-  }
+    @IBAction func filterButtonTapped(_ sender: Any) {
+      toggleFilterMenu()
+      
+    }
   
     
   
@@ -45,22 +46,33 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
       return cell!
     }
   
-  func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
     return 250.0
-  }
+    }
   
   
-  private func toggleFilterMenu() {
-      self.filterMenuOpen = true
-      self.filterMenuConstrains.constant = 0
-  }
+    private func toggleFilterMenu() {    
+        self.filterMenuOpen = true
+        self.filterMenuConstrains.constant = 0
+        UIView.animate(withDuration: 1.0,
+                       delay: 0.5,
+                       options: .curveEaseIn,
+                       animations: {
+                        self.view.layoutIfNeeded()
+//                        self.mainView.alpha = 0.1
+                        
+      })
+    }
   
-  @objc private func hideFilterMenu() {
-      self.filterMenuOpen = false
-      self.filterMenuConstrains.constant = -490
+    @objc private func hideFilterMenu() {
+        self.filterMenuOpen = false
+        self.filterMenuConstrains.constant = -490
+        UIView.animate(withDuration: 1.0,
+                       delay: 0.5,
+                       options: .curveEaseOut,
+                       animations: {
+                        self.view.layoutIfNeeded()
+                        
+        })
+    }
   }
-
-
-    
-
-}

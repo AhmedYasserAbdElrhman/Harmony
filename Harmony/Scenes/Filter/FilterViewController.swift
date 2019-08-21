@@ -9,7 +9,12 @@
 import UIKit
 
 class FilterViewController: UIViewController {
-
+  private let sliderTextLabel = UILabel()
+  @IBAction func sliderMoving(_ sender: Any) {
+    sliderTextLabel.text = "\(sliderBar.value)"
+    self.view.addSubview(sliderTextLabel)
+    sliderTextLabel.frame = sliderBar.frame
+  }
   @IBOutlet weak var sliderBar: UISlider!
   override func viewDidLoad() {
         super.viewDidLoad()
