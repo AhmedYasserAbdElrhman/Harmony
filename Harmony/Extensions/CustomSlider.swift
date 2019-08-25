@@ -26,11 +26,9 @@ class CustomeSlider: UISlider {
   // Changing size of the slider thumb !!
   
   func didSetFunc() -> UIImage {
-      let size = CGSize(width: 50, height: 50)
-      UIGraphicsBeginImageContext(size)
-      let areaSize = CGRect(x: 0, y: 0, width: size.width, height: size.height)
+      UIGraphicsBeginImageContext(thumbImage!.size)
       thumbImage?.draw(in: CGRect(origin: CGPoint.zero, size: thumbImage!.size))
-      thumbHighlitedImage?.draw(in: CGRect(origin: CGPoint(x: 20, y: 15), size: thumbHighlitedImage!.size))
+      thumbHighlitedImage?.draw(in: CGRect(origin: CGPoint(x: 25, y: 15), size: thumbHighlitedImage!.size))
       let newImage: UIImage = UIGraphicsGetImageFromCurrentImageContext()!
       UIGraphicsEndImageContext()
       return newImage
