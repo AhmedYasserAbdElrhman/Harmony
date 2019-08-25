@@ -10,31 +10,30 @@ import UIKit
 
 class FilterViewController: UIViewController {
   private let sliderTextLabel = UILabel()
-  
   //How to set label over and upove the slider thumb !!
-  @IBAction func sliderMoving(_ sender: Any) {
-    sliderTextLabel.text = "\(sliderBar.value)"
-    self.view.addSubview(sliderTextLabel)
-    sliderTextLabel.frame = sliderBar.frame
-  }
+
   @IBOutlet weak var sliderBar: UISlider!
   override func viewDidLoad() {
         super.viewDidLoad()
-
     }
     
   @IBAction func cancelFilterButtonTapped(_ sender: Any) {
     NotificationCenter.default.post(name: NSNotification.Name("HideFilterMenu"), object: nil)
   }
+  
+  @IBAction func sliderMoving(_ sender: CustomeSlider) {
+    sliderTextLabel.text = "\(Int(sliderBar.value))"
+    self.view.addSubview(sliderTextLabel)
+    sliderTextLabel.frame = addTextOverSlider(slider: sender)
+  }
+  
+  
+  func addTextOverSlider(slider: CustomeSlider) -> CGRect {
+    let sliderTrack = slider.trackRect(forBounds: slider.bounds)
+    let sliderFrame = slider.thumbRect(forBounds: slider.bounds, trackRect: sliderTrack, value: slider.value)
+    return CGRect(x: sliderFrame.origin.x + slider.frame.origin.x + 15 , y: slider.frame.origin.y - 25 ,width: 50,height: 15)
+  }
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+  
 
 }

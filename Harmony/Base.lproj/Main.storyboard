@@ -442,7 +442,7 @@
         <scene sceneID="PUv-Ib-yXp">
             <objects>
                 <viewController id="hfA-T0-DGx" customClass="FilterViewController" customModule="Harmony" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="jx9-fI-beh">
+                    <view key="view" contentMode="scaleToFill" id="jx9-fI-beh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="403"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -486,7 +486,7 @@
                                     <userDefinedRuntimeAttribute type="image" keyPath="thumbHighlitedImage" value="thumbImageHighlited"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="sliderMoving:" destination="hfA-T0-DGx" eventType="valueChanged" id="aSO-et-0SV"/>
+                                    <action selector="sliderMoving:" destination="hfA-T0-DGx" eventType="valueChanged" id="AUK-pJ-ama"/>
                                 </connections>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What you are up to ?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qxe-37-AuX">
@@ -593,6 +593,7 @@
                             <constraint firstItem="awd-8a-9ls" firstAttribute="leading" secondItem="jx9-fI-beh" secondAttribute="leading" constant="10.5" id="tSV-aw-ced"/>
                             <constraint firstItem="AVj-7V-cDQ" firstAttribute="leading" secondItem="jx9-fI-beh" secondAttribute="leading" id="xWR-Nh-7bq"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="0Kb-Pb-cVB"/>
                     </view>
                     <connections>
                         <outlet property="sliderBar" destination="awd-8a-9ls" id="Awg-Iy-WAl"/>

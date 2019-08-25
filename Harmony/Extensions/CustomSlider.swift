@@ -31,7 +31,7 @@ class CustomeSlider: UISlider {
       let areaSize = CGRect(x: 0, y: 0, width: size.width, height: size.height)
       thumbImage?.draw(in: CGRect(origin: CGPoint.zero, size: thumbImage!.size))
       thumbHighlitedImage?.draw(in: CGRect(origin: CGPoint(x: 20, y: 15), size: thumbHighlitedImage!.size))
-      var newImage: UIImage = UIGraphicsGetImageFromCurrentImageContext()!
+      let newImage: UIImage = UIGraphicsGetImageFromCurrentImageContext()!
       UIGraphicsEndImageContext()
       return newImage
     
