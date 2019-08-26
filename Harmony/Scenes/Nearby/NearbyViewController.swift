@@ -6,26 +6,27 @@
 //  Copyright © 2019 Ahmed Yasser. All rights reserved.
 //
 
+protocol ContainerViewActionsDelgator: class {
+  func toggleFilterMenu()
+  func hideFilterMenu()
+}
+
 import UIKit
 import MapKit
 
 class NearbyViewController: UIViewController {
-
+  
+  weak var delegate: ContainerViewActionsDelgator!
     override func viewDidLoad() {
         super.viewDidLoad()
+      
 
         // Do any additional setup after loading the view.
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+  @IBAction func filterButtonTapped(_ sender: UIBarButtonItem) {
+    NotificationCenter.default.post(name: NSNotification.Name("ToggleFilterMenu"), object: nil)
+  }
+  
 }

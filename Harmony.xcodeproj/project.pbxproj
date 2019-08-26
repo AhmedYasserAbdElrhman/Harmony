@@ -23,6 +23,7 @@
 		2F074C0F230D4FFF00B5D2D2 /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F074C0E230D4FFF00B5D2D2 /* SideMenuViewController.swift */; };
 		2F074C12230D66B900B5D2D2 /* NearbyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F074C11230D66B900B5D2D2 /* NearbyViewController.swift */; };
 		2F074C14230D973500B5D2D2 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F074C13230D973500B5D2D2 /* MainTabBarController.swift */; };
+		2F13D78C23140AC600D15421 /* MyTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F13D78B23140AC600D15421 /* MyTabBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		2F074C0E230D4FFF00B5D2D2 /* SideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
 		2F074C11230D66B900B5D2D2 /* NearbyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyViewController.swift; sourceTree = "<group>"; };
 		2F074C13230D973500B5D2D2 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		2F13D78B23140AC600D15421 /* MyTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTabBar.swift; sourceTree = "<group>"; };
 		924D487F0395A0B4255A8014 /* Pods-Harmony.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Harmony.debug.xcconfig"; path = "Target Support Files/Pods-Harmony/Pods-Harmony.debug.xcconfig"; sourceTree = "<group>"; };
 		B4CDC836AE429DCD0D1EEC5F /* Pods_Harmony.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Harmony.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C67A77F8AC2B0B5B08BE75CA /* Pods-Harmony.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Harmony.release.xcconfig"; path = "Target Support Files/Pods-Harmony/Pods-Harmony.release.xcconfig"; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 				2F074BFD230AF6EE00B5D2D2 /* UIViewExtenstion.swift */,
 				2F074BFB230AC6FC00B5D2D2 /* CustomBar.swift */,
 				2F074C0B230C57B200B5D2D2 /* CustomSlider.swift */,
+				2F13D78B23140AC600D15421 /* MyTabBar.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -291,6 +294,7 @@
 			files = (
 				2F074BE62309973100B5D2D2 /* Login.swift in Sources */,
 				2F074C0C230C57B200B5D2D2 /* CustomSlider.swift in Sources */,
+				2F13D78C23140AC600D15421 /* MyTabBar.swift in Sources */,
 				2F074C14230D973500B5D2D2 /* MainTabBarController.swift in Sources */,
 				2F074BF62309993900B5D2D2 /* DesinableTextField.swift in Sources */,
 				2F074C0A230C52A800B5D2D2 /* FilterViewController.swift in Sources */,

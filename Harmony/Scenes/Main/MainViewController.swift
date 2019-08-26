@@ -8,8 +8,7 @@
 
 import UIKit
 
-@IBDesignable
-class MainViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class MainViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, ContainerViewActionsDelgator {
   
   @IBOutlet weak var tableView: UITableView!
   @IBOutlet weak var filterMenuConstrains: NSLayoutConstraint!
@@ -25,6 +24,10 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     NotificationCenter.default.addObserver(self,
                                            selector: #selector(hideFilterMenu),
                                            name: NSNotification.Name("HideFilterMenu"),
+                                           object: nil)
+    NotificationCenter.default.addObserver(self,
+                                           selector: #selector(toggleFilterMenu),
+                                           name: NSNotification.Name("ToggleFilterMenu"),
                                            object: nil)
   }
   
@@ -57,7 +60,7 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
   }
   
   
-  private func toggleFilterMenu() {
+  @objc func toggleFilterMenu() {
     self.filterMenuOpen = true
     self.filterMenuConstrains.constant = 0
     UIView.animate(withDuration: 1.0,
@@ -68,7 +71,7 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     })
   }
   
-  @objc private func hideFilterMenu() {
+  @objc func hideFilterMenu() {
     self.filterMenuOpen = false
     self.filterMenuConstrains.constant = -490
     UIView.animate(withDuration: 1.0,

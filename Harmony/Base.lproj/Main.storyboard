@@ -148,10 +148,10 @@
             </objects>
             <point key="canvasLocation" x="-1033" y="1218"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--My Tab Bar-->
         <scene sceneID="eGP-Vu-Ebg">
             <objects>
-                <tabBarController id="hrg-84-tpt" sceneMemberID="viewController">
+                <tabBarController id="hrg-84-tpt" customClass="MyTabBar" customModule="Harmony" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="GCH-x2-xhy" customClass="CustomBar" customModule="Harmony" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -621,7 +621,7 @@
                                         <barButtonItem key="rightBarButtonItem" image="filterico" id="CYU-Ly-pQs">
                                             <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <connections>
-                                                <action selector="filterButtonTapped:" destination="Hl0-9h-lvJ" id="gBd-uH-kPm"/>
+                                                <action selector="filterButtonTapped:" destination="xfQ-wZ-d7Z" id="OiA-Vz-N11"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
