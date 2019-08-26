@@ -290,7 +290,7 @@
                                                     </constraints>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                            <real key="value" value="1"/>
+                                                            <real key="value" value="0.0"/>
                                                         </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
                                                 </view>
@@ -345,7 +345,7 @@
                     </userDefinedRuntimeAttributes>
                     <connections>
                         <outlet property="filterMenuConstrains" destination="iZm-Jx-kUj" id="mTC-TW-s12"/>
-                        <outlet property="tableView" destination="phk-It-cDi" id="JB7-kQ-HmC"/>
+                        <outlet property="tableView" destination="phk-It-cDi" id="zGD-OK-SAd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gJj-RR-vfl" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -442,7 +442,7 @@
         <scene sceneID="PUv-Ib-yXp">
             <objects>
                 <viewController id="hfA-T0-DGx" customClass="FilterViewController" customModule="Harmony" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="jx9-fI-beh">
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="jx9-fI-beh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="403"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -486,7 +486,7 @@
                                     <userDefinedRuntimeAttribute type="image" keyPath="thumbHighlitedImage" value="thumbImageHighlited"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="sliderMoving:" destination="hfA-T0-DGx" eventType="valueChanged" id="AUK-pJ-ama"/>
+                                    <action selector="sliderMoving:" destination="hfA-T0-DGx" eventType="valueChanged" id="aSO-et-0SV"/>
                                 </connections>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What you are up to ?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qxe-37-AuX">

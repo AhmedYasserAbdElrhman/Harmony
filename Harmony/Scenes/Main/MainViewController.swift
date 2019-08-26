@@ -15,78 +15,74 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
   @IBOutlet weak var filterMenuConstrains: NSLayoutConstraint!
   
   @IBInspectable var tableViewBackground: UIColor?
+  
+  var cellViewBackground: UIColor?
   var filterMenuOpen: Bool!
   
   override func viewDidLoad() {
-        super.viewDidLoad()
-//    self.tableView.backgroundColor = tableViewBackground
+    super.viewDidLoad()
     configureTableViewBackground()
     NotificationCenter.default.addObserver(self,
                                            selector: #selector(hideFilterMenu),
                                            name: NSNotification.Name("HideFilterMenu"),
                                            object: nil)
-    }
+  }
   
-  // After adding TabBarController tableviewBackground not working !!!
   func configureTableViewBackground( ){
     self.tableView.backgroundColor = tableViewBackground
     let blurEffect = UIBlurEffect(style: .extraLight)
     let blurVisualEffectView = UIVisualEffectView(effect: blurEffect)
     blurVisualEffectView.frame = self.view.frame
     self.tableView.backgroundView = blurVisualEffectView
-
-  }
-  
-  
-    @IBAction func filterButtonTapped(_ sender: Any) {
-      toggleFilterMenu()
-      
-    }
-  
+    cellViewBackground = blurVisualEffectView.backgroundColor
     
-  
-  
-  
-  
-  
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-      return 5
-    }
-  
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-      let cell = tableView.dequeueReusableCell(withIdentifier: "Cell") as? MainTableViewCell
-      cell!.cellImage.image = UIImage(named: "place1")
-      cell!.titleLabel.text = "Great Design Lets Test"
-      return cell!
-    }
-  
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-    return 250.0
-    }
-  
-  
-    private func toggleFilterMenu() {    
-        self.filterMenuOpen = true
-        self.filterMenuConstrains.constant = 0
-        UIView.animate(withDuration: 1.0,
-                       delay: 0.5,
-                       options: .curveEaseIn,
-                       animations: {
-                        self.view.layoutIfNeeded()
-//                        self.view.alpha = 0.1
-                        
-      })
-    }
-  
-    @objc private func hideFilterMenu() {
-        self.filterMenuOpen = false
-        self.filterMenuConstrains.constant = -490
-        UIView.animate(withDuration: 1.0,
-                       delay: 0.5,
-                       options: .curveEaseOut,
-                       animations: {
-                        self.view.layoutIfNeeded()
-                        
-        })
-    }
   }
+  
+  
+  func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    return 5
+  }
+  
+  func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    let cell = tableView.dequeueReusableCell(withIdentifier: "Cell") as? MainTableViewCell
+    cell!.cellImage.image = UIImage(named: "place1")
+    cell?.backgroundColor = cellViewBackground
+    cell?.hideSperatorLines()
+    cell!.titleLabel.text = "Great Design Lets Test"
+    return cell!
+  }
+  
+  func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+    return 250.0
+  }
+  
+  
+  private func toggleFilterMenu() {
+    self.filterMenuOpen = true
+    self.filterMenuConstrains.constant = 0
+    UIView.animate(withDuration: 1.0,
+                   delay: 0.5,
+                   options: .curveEaseIn,
+                   animations: {
+                    self.view.layoutIfNeeded()                    
+    })
+  }
+  
+  @objc private func hideFilterMenu() {
+    self.filterMenuOpen = false
+    self.filterMenuConstrains.constant = -490
+    UIView.animate(withDuration: 1.0,
+                   delay: 0.5,
+                   options: .curveEaseOut,
+                   animations: {
+                    self.view.layoutIfNeeded()
+                    
+    })
+  }
+  
+  @IBAction func filterButtonTapped(_ sender: Any) {
+    toggleFilterMenu()
+    
+  }
+  
+}
