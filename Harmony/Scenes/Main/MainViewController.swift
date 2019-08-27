@@ -8,8 +8,9 @@
 
 import UIKit
 
-class MainViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, ContainerViewActionsDelgator {
+class MainViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
   
+  @IBOutlet weak var containerView: UIView!
   @IBOutlet weak var tableView: UITableView!
   @IBOutlet weak var filterMenuConstrains: NSLayoutConstraint!
   

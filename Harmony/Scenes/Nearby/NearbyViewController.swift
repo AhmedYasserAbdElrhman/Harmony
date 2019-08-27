@@ -6,17 +6,12 @@
 //  Copyright © 2019 Ahmed Yasser. All rights reserved.
 //
 
-protocol ContainerViewActionsDelgator: class {
-  func toggleFilterMenu()
-  func hideFilterMenu()
-}
-
 import UIKit
 import MapKit
 
 class NearbyViewController: UIViewController {
   
-  weak var delegate: ContainerViewActionsDelgator!
+  var containerView: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
       
@@ -26,7 +21,13 @@ class NearbyViewController: UIViewController {
     
 
   @IBAction func filterButtonTapped(_ sender: UIBarButtonItem) {
-    NotificationCenter.default.post(name: NSNotification.Name("ToggleFilterMenu"), object: nil)
+    let storyBoard = UIStoryboard(name: "Main", bundle: .main)
+    let filterView = storyBoard.instantiateViewController(withIdentifier: "Filter")
+    self.addChild(filterView)
+    self.view.addSubview(filterView.view)
+    filterView.view.translatesAutoresizingMaskIntoConstraints = false
+    filterView.view.center = CGPoint(x: self.view.bounds.midX, y: self.view.bounds.midY)
+    filterView.didMove(toParent: self)
   }
   
 }

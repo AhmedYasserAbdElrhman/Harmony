@@ -344,6 +344,7 @@
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                     <connections>
+                        <outlet property="containerView" destination="yyA-I8-z5o" id="Nnr-YW-pNo"/>
                         <outlet property="filterMenuConstrains" destination="iZm-Jx-kUj" id="mTC-TW-s12"/>
                         <outlet property="tableView" destination="phk-It-cDi" id="zGD-OK-SAd"/>
                     </connections>
@@ -441,7 +442,7 @@
         <!--Filter View Controller-->
         <scene sceneID="PUv-Ib-yXp">
             <objects>
-                <viewController id="hfA-T0-DGx" customClass="FilterViewController" customModule="Harmony" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Filter" id="hfA-T0-DGx" customClass="FilterViewController" customModule="Harmony" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" ambiguous="YES" id="jx9-fI-beh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="403"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
