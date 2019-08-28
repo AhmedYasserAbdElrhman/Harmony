@@ -22,7 +22,9 @@
 		2F074C0F230D4FFF00B5D2D2 /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F074C0E230D4FFF00B5D2D2 /* SideMenuViewController.swift */; };
 		2F074C12230D66B900B5D2D2 /* NearbyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F074C11230D66B900B5D2D2 /* NearbyViewController.swift */; };
 		2F074C14230D973500B5D2D2 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F074C13230D973500B5D2D2 /* MainTabBarController.swift */; };
+		2F0ED03C23168EF9004AA810 /* LocationVerfier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0ED03B23168EF9004AA810 /* LocationVerfier.swift */; };
 		2F13D78C23140AC600D15421 /* MyTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F13D78B23140AC600D15421 /* MyTabBar.swift */; };
+		2F1577F32316047F0078468F /* Spot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1577F22316047F0078468F /* Spot.swift */; };
 		7542DABDFEF7F9A582C961F4 /* Pods_Harmony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6C35FC1DFB9B46F2A133A8F /* Pods_Harmony.framework */; };
 /* End PBXBuildFile section */
 
@@ -44,7 +46,9 @@
 		2F074C0E230D4FFF00B5D2D2 /* SideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
 		2F074C11230D66B900B5D2D2 /* NearbyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyViewController.swift; sourceTree = "<group>"; };
 		2F074C13230D973500B5D2D2 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		2F0ED03B23168EF9004AA810 /* LocationVerfier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationVerfier.swift; sourceTree = "<group>"; };
 		2F13D78B23140AC600D15421 /* MyTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTabBar.swift; sourceTree = "<group>"; };
+		2F1577F22316047F0078468F /* Spot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spot.swift; sourceTree = "<group>"; };
 		4C147970F06915B993E25F69 /* Pods-Harmony.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Harmony.debug.xcconfig"; path = "Target Support Files/Pods-Harmony/Pods-Harmony.debug.xcconfig"; sourceTree = "<group>"; };
 		EEF04C41658A367973B90A8D /* Pods-Harmony.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Harmony.release.xcconfig"; path = "Target Support Files/Pods-Harmony/Pods-Harmony.release.xcconfig"; sourceTree = "<group>"; };
 		F6C35FC1DFB9B46F2A133A8F /* Pods_Harmony.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Harmony.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -91,6 +95,8 @@
 		2F074BE22309973100B5D2D2 /* Harmony */ = {
 			isa = PBXGroup;
 			children = (
+				2F0ED03923168EA7004AA810 /* Utilites */,
+				2F1577F1231604620078468F /* Model */,
 				2F074BE32309973100B5D2D2 /* AppDelegate.swift */,
 				2F074BFA2309AA4000B5D2D2 /* Scenes */,
 				2F074BE72309973100B5D2D2 /* Main.storyboard */,
@@ -166,6 +172,30 @@
 				2F074C11230D66B900B5D2D2 /* NearbyViewController.swift */,
 			);
 			path = Nearby;
+			sourceTree = "<group>";
+		};
+		2F0ED03923168EA7004AA810 /* Utilites */ = {
+			isa = PBXGroup;
+			children = (
+				2F0ED03A23168ECB004AA810 /* Helper */,
+			);
+			path = Utilites;
+			sourceTree = "<group>";
+		};
+		2F0ED03A23168ECB004AA810 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				2F0ED03B23168EF9004AA810 /* LocationVerfier.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		2F1577F1231604620078468F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2F1577F22316047F0078468F /* Spot.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		6E386B9D1AF4DFF2B831BA64 /* Pods */ = {
@@ -297,6 +327,8 @@
 				2F13D78C23140AC600D15421 /* MyTabBar.swift in Sources */,
 				2F074C14230D973500B5D2D2 /* MainTabBarController.swift in Sources */,
 				2F074BF62309993900B5D2D2 /* DesinableTextField.swift in Sources */,
+				2F0ED03C23168EF9004AA810 /* LocationVerfier.swift in Sources */,
+				2F1577F32316047F0078468F /* Spot.swift in Sources */,
 				2F074C0A230C52A800B5D2D2 /* FilterViewController.swift in Sources */,
 				2F074BFC230AC6FC00B5D2D2 /* CustomBar.swift in Sources */,
 				2F074C04230AFC2A00B5D2D2 /* MainTableViewCell.swift in Sources */,
