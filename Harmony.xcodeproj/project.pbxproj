@@ -22,6 +22,8 @@
 		2F074C0F230D4FFF00B5D2D2 /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F074C0E230D4FFF00B5D2D2 /* SideMenuViewController.swift */; };
 		2F074C12230D66B900B5D2D2 /* NearbyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F074C11230D66B900B5D2D2 /* NearbyViewController.swift */; };
 		2F074C14230D973500B5D2D2 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F074C13230D973500B5D2D2 /* MainTabBarController.swift */; };
+		2F0E4D5423180C4800DD2257 /* NearbyConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0E4D5323180C4800DD2257 /* NearbyConfigurator.swift */; };
+		2F0E4D5623180D4F00DD2257 /* NearbyPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0E4D5523180D4F00DD2257 /* NearbyPresenter.swift */; };
 		2F0ED03C23168EF9004AA810 /* LocationVerfier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0ED03B23168EF9004AA810 /* LocationVerfier.swift */; };
 		2F13D78C23140AC600D15421 /* MyTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F13D78B23140AC600D15421 /* MyTabBar.swift */; };
 		2F1577F32316047F0078468F /* Spot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1577F22316047F0078468F /* Spot.swift */; };
@@ -46,6 +48,8 @@
 		2F074C0E230D4FFF00B5D2D2 /* SideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
 		2F074C11230D66B900B5D2D2 /* NearbyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyViewController.swift; sourceTree = "<group>"; };
 		2F074C13230D973500B5D2D2 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		2F0E4D5323180C4800DD2257 /* NearbyConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyConfigurator.swift; sourceTree = "<group>"; };
+		2F0E4D5523180D4F00DD2257 /* NearbyPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyPresenter.swift; sourceTree = "<group>"; };
 		2F0ED03B23168EF9004AA810 /* LocationVerfier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationVerfier.swift; sourceTree = "<group>"; };
 		2F13D78B23140AC600D15421 /* MyTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTabBar.swift; sourceTree = "<group>"; };
 		2F1577F22316047F0078468F /* Spot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spot.swift; sourceTree = "<group>"; };
@@ -170,6 +174,8 @@
 			isa = PBXGroup;
 			children = (
 				2F074C11230D66B900B5D2D2 /* NearbyViewController.swift */,
+				2F0E4D5323180C4800DD2257 /* NearbyConfigurator.swift */,
+				2F0E4D5523180D4F00DD2257 /* NearbyPresenter.swift */,
 			);
 			path = Nearby;
 			sourceTree = "<group>";
@@ -329,7 +335,9 @@
 				2F074BF62309993900B5D2D2 /* DesinableTextField.swift in Sources */,
 				2F0ED03C23168EF9004AA810 /* LocationVerfier.swift in Sources */,
 				2F1577F32316047F0078468F /* Spot.swift in Sources */,
+				2F0E4D5423180C4800DD2257 /* NearbyConfigurator.swift in Sources */,
 				2F074C0A230C52A800B5D2D2 /* FilterViewController.swift in Sources */,
+				2F0E4D5623180D4F00DD2257 /* NearbyPresenter.swift in Sources */,
 				2F074BFC230AC6FC00B5D2D2 /* CustomBar.swift in Sources */,
 				2F074C04230AFC2A00B5D2D2 /* MainTableViewCell.swift in Sources */,
 				2F074C02230AF97D00B5D2D2 /* MainViewController.swift in Sources */,

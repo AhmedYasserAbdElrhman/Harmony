@@ -9,7 +9,14 @@
 import UIKit
 import MapKit
 
-class NearbyViewController: UIViewController {
+protocol NearbyView {
+  func settingsAlertMessage(title: String, message: String)
+}
+
+
+class NearbyViewController: UIViewController, CLLocationManagerDelegate {
+  
+  private var configurator: NearbyConfigurator = NearbyConfiguratorImplementation()
   let locationVerfier = LocationVerfier()
   let spots = [Spot(spotName: "Swifty Camp", lattitude: 30.0540201, longtitude: 31.1992786),
                   Spot(spotName: "Dumiat ❤️", lattitude: 31.41648, longtitude: 31.81332),
@@ -22,7 +29,9 @@ class NearbyViewController: UIViewController {
   var containerView: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
-      locationVerfier.checkLocationServices() { fetchSpotsOnMap(spots) }
+      locationVerfier.checkLocationServices() { settingsAlertMessage(title: "Turn on Location", message: "Turn on")}
+      locationVerfier.checkLocationAuthorization {fetchSpotsOnMap(spots) }
+      locationVerfier.locationManger.delegate = self
       
 
         // Do any additional setup after loading the view.
