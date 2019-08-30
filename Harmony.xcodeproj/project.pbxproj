@@ -24,9 +24,12 @@
 		2F074C14230D973500B5D2D2 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F074C13230D973500B5D2D2 /* MainTabBarController.swift */; };
 		2F0E4D5423180C4800DD2257 /* NearbyConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0E4D5323180C4800DD2257 /* NearbyConfigurator.swift */; };
 		2F0E4D5623180D4F00DD2257 /* NearbyPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0E4D5523180D4F00DD2257 /* NearbyPresenter.swift */; };
+		2F0E4D5923181D2200DD2257 /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0E4D5823181D2200DD2257 /* UserProfileViewController.swift */; };
 		2F0ED03C23168EF9004AA810 /* LocationVerfier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0ED03B23168EF9004AA810 /* LocationVerfier.swift */; };
 		2F13D78C23140AC600D15421 /* MyTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F13D78B23140AC600D15421 /* MyTabBar.swift */; };
 		2F1577F32316047F0078468F /* Spot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1577F22316047F0078468F /* Spot.swift */; };
+		2FACC34423198BC4000CF618 /* MyFavPlacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FACC34223198BC4000CF618 /* MyFavPlacesViewController.swift */; };
+		2FACC34823198BE8000CF618 /* MyReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FACC34623198BE8000CF618 /* MyReviewViewController.swift */; };
 		7542DABDFEF7F9A582C961F4 /* Pods_Harmony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6C35FC1DFB9B46F2A133A8F /* Pods_Harmony.framework */; };
 /* End PBXBuildFile section */
 
@@ -50,9 +53,12 @@
 		2F074C13230D973500B5D2D2 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		2F0E4D5323180C4800DD2257 /* NearbyConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyConfigurator.swift; sourceTree = "<group>"; };
 		2F0E4D5523180D4F00DD2257 /* NearbyPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyPresenter.swift; sourceTree = "<group>"; };
+		2F0E4D5823181D2200DD2257 /* UserProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
 		2F0ED03B23168EF9004AA810 /* LocationVerfier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationVerfier.swift; sourceTree = "<group>"; };
 		2F13D78B23140AC600D15421 /* MyTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTabBar.swift; sourceTree = "<group>"; };
 		2F1577F22316047F0078468F /* Spot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spot.swift; sourceTree = "<group>"; };
+		2FACC34223198BC4000CF618 /* MyFavPlacesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFavPlacesViewController.swift; sourceTree = "<group>"; };
+		2FACC34623198BE8000CF618 /* MyReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyReviewViewController.swift; sourceTree = "<group>"; };
 		4C147970F06915B993E25F69 /* Pods-Harmony.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Harmony.debug.xcconfig"; path = "Target Support Files/Pods-Harmony/Pods-Harmony.debug.xcconfig"; sourceTree = "<group>"; };
 		EEF04C41658A367973B90A8D /* Pods-Harmony.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Harmony.release.xcconfig"; path = "Target Support Files/Pods-Harmony/Pods-Harmony.release.xcconfig"; sourceTree = "<group>"; };
 		F6C35FC1DFB9B46F2A133A8F /* Pods_Harmony.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Harmony.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -127,6 +133,7 @@
 		2F074BFA2309AA4000B5D2D2 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				2F0E4D5723181CFB00DD2257 /* UserProfile */,
 				2F074C10230D669600B5D2D2 /* Nearby */,
 				2F074C0D230D4CB600B5D2D2 /* SideMenu */,
 				2F074C08230C528B00B5D2D2 /* Filter */,
@@ -180,6 +187,15 @@
 			path = Nearby;
 			sourceTree = "<group>";
 		};
+		2F0E4D5723181CFB00DD2257 /* UserProfile */ = {
+			isa = PBXGroup;
+			children = (
+				2FACC33D23198AB6000CF618 /* ContainerView */,
+				2F0E4D5823181D2200DD2257 /* UserProfileViewController.swift */,
+			);
+			path = UserProfile;
+			sourceTree = "<group>";
+		};
 		2F0ED03923168EA7004AA810 /* Utilites */ = {
 			isa = PBXGroup;
 			children = (
@@ -202,6 +218,15 @@
 				2F1577F22316047F0078468F /* Spot.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		2FACC33D23198AB6000CF618 /* ContainerView */ = {
+			isa = PBXGroup;
+			children = (
+				2FACC34223198BC4000CF618 /* MyFavPlacesViewController.swift */,
+				2FACC34623198BE8000CF618 /* MyReviewViewController.swift */,
+			);
+			path = ContainerView;
 			sourceTree = "<group>";
 		};
 		6E386B9D1AF4DFF2B831BA64 /* Pods */ = {
@@ -328,13 +353,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FACC34423198BC4000CF618 /* MyFavPlacesViewController.swift in Sources */,
 				2F074BE62309973100B5D2D2 /* Login.swift in Sources */,
+				2FACC34823198BE8000CF618 /* MyReviewViewController.swift in Sources */,
 				2F074C0C230C57B200B5D2D2 /* CustomSlider.swift in Sources */,
 				2F13D78C23140AC600D15421 /* MyTabBar.swift in Sources */,
 				2F074C14230D973500B5D2D2 /* MainTabBarController.swift in Sources */,
 				2F074BF62309993900B5D2D2 /* DesinableTextField.swift in Sources */,
 				2F0ED03C23168EF9004AA810 /* LocationVerfier.swift in Sources */,
 				2F1577F32316047F0078468F /* Spot.swift in Sources */,
+				2F0E4D5923181D2200DD2257 /* UserProfileViewController.swift in Sources */,
 				2F0E4D5423180C4800DD2257 /* NearbyConfigurator.swift in Sources */,
 				2F074C0A230C52A800B5D2D2 /* FilterViewController.swift in Sources */,
 				2F0E4D5623180D4F00DD2257 /* NearbyPresenter.swift in Sources */,

@@ -339,7 +339,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Harmony/Scenes/Nearby/NearbyViewController.swift"
-            timestampString = "588781599.151744"
+            timestampString = "588881603.20683"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "33"
@@ -355,7 +355,7 @@
                   moduleName = "Harmony"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/biko/Documents/Projects/Harmony/Harmony/Scenes/Nearby/NearbyViewController.swift"
-                  timestampString = "588781599.451618"
+                  timestampString = "588881603.51978"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "33"
@@ -370,7 +370,7 @@
                   moduleName = "Harmony"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/biko/Documents/Projects/Harmony/Harmony/Scenes/Nearby/NearbyViewController.swift"
-                  timestampString = "588781599.453438"
+                  timestampString = "588881603.521425"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "33"
@@ -387,7 +387,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Harmony/Utilites/Helper/LocationVerfier.swift"
-            timestampString = "588781599.151855"
+            timestampString = "588881603.206959"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "16"
@@ -403,7 +403,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Harmony/Utilites/Helper/LocationVerfier.swift"
-            timestampString = "588781599.152307"
+            timestampString = "588881603.207034"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "18"
@@ -419,7 +419,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Harmony/Utilites/Helper/LocationVerfier.swift"
-            timestampString = "588781599.1526361"
+            timestampString = "588881603.2071"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "14"
@@ -435,7 +435,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Harmony/Utilites/Helper/LocationVerfier.swift"
-            timestampString = "588781599.15303"
+            timestampString = "588881603.207159"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "27"
@@ -451,7 +451,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Harmony/Utilites/Helper/LocationVerfier.swift"
-            timestampString = "588781599.153361"
+            timestampString = "588881603.207216"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "43"
@@ -467,12 +467,124 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Harmony/Utilites/Helper/LocationVerfier.swift"
-            timestampString = "588781599.1537009"
+            timestampString = "588881603.2072721"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "52"
             endingLineNumber = "52"
             landmarkName = "settingsAlertMessage(title:message:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Harmony/Scenes/UserProfile/UserProfileViewController.swift"
+            timestampString = "588881603.207443"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "setupContainerViews()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Harmony/Scenes/UserProfile/UserProfileViewController.swift"
+            timestampString = "588881603.208022"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "setupContainerViews()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Harmony/Scenes/UserProfile/ContainerView/MyFavPlacesViewController.swift"
+            timestampString = "588881603.208362"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "viewWillAppear(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Harmony/Scenes/UserProfile/ContainerView/MyReviewViewController.swift"
+            timestampString = "588881603.208445"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "viewWillAppear(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Harmony/Scenes/UserProfile/UserProfileViewController.swift"
+            timestampString = "588881603.208503"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Harmony/Scenes/UserProfile/UserProfileViewController.swift"
+            timestampString = "588881617.647082"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "setupSegmentControl()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Harmony/Scenes/UserProfile/UserProfileViewController.swift"
+            timestampString = "588881621.496613"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
+            landmarkName = "segmentSwitchControl(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

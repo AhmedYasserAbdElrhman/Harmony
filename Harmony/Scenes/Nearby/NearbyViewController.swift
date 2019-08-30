@@ -33,8 +33,6 @@ class NearbyViewController: UIViewController, CLLocationManagerDelegate {
       locationVerfier.checkLocationAuthorization {fetchSpotsOnMap(spots) }
       locationVerfier.locationManger.delegate = self
       
-
-        // Do any additional setup after loading the view.
     }
     
 
