@@ -747,15 +747,15 @@
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Rhq-mJ-EQU">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="366"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Vc9-JO-cA8">
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Vc9-JO-cA8">
                                     <size key="itemSize" width="206" height="148"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="pOf-nP-O2r">
-                                        <rect key="frame" x="104" y="0.0" width="206" height="148"/>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Fav Places Cell" id="pOf-nP-O2r">
+                                        <rect key="frame" x="0.0" y="0.0" width="206" height="148"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                             <rect key="frame" x="0.0" y="0.0" width="206" height="148"/>
@@ -771,7 +771,7 @@
                                                     <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jHg-XG-S2o">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="place1" translatesAutoresizingMaskIntoConstraints="NO" id="jHg-XG-S2o">
                                                     <rect key="frame" x="2" y="0.0" width="202" height="70"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="70" id="Vd4-6p-UcS"/>
@@ -818,6 +818,10 @@
                                         </constraints>
                                     </collectionViewCell>
                                 </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="Pf3-Df-Whe" id="WDP-DP-HmN"/>
+                                    <outlet property="delegate" destination="Pf3-Df-Whe" id="kUT-vQ-1E5"/>
+                                </connections>
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -869,6 +873,7 @@
         <image name="icon2" width="36" height="36"/>
         <image name="map-normal" width="22" height="24"/>
         <image name="map-selected" width="22" height="24"/>
+        <image name="place1" width="335" height="160"/>
         <image name="separator" width="26" height="26"/>
         <image name="sidemenuicon" width="17" height="15"/>
         <image name="thumbImage" width="64" height="48"/>

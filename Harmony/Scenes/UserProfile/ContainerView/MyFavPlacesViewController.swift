@@ -8,28 +8,33 @@
 
 import UIKit
 
-class MyFavPlacesViewController: UIViewController {
+class MyFavPlacesViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+  
   
   
   override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
   }
+  
+  override func viewDidLoad() {
+    super.viewDidLoad()
+  }
+  
+  
+  
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+  func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    return 4
+  }
+  
+  func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+    let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Fav Places Cell", for: indexPath)
+    return cell
+    
+  }
+  
+  
 
-        // Do any additional setup after loading the view.
-    }
 
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

@@ -17,7 +17,8 @@ class UserProfileViewController: UIViewController {
   override func viewDidLoad() {
         super.viewDidLoad()
         setupSegmentControl()
-        setupContainerViews()
+//        setupContainerViews()
+        updateView()
     }
   
   
