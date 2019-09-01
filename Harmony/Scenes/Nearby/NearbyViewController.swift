@@ -27,10 +27,21 @@ class NearbyViewController: UIViewController, CLLocationManagerDelegate {
                   Spot(spotName: "Cairo", lattitude: 30.0444, longtitude: 31.2357)]
   @IBOutlet private weak var mapView: MKMapView!
   var containerView: UIView!
+  
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+      locationVerfier.checkLocationServices() { settingsAlertMessage(title: "Turn on Location", message: "Turn on")}
+
+    }
+  
+  override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+    locationVerfier.checkLocationAuthorization {fetchSpotsOnMap(spots) }
+    
+    }
+  
     override func viewDidLoad() {
         super.viewDidLoad()
-      locationVerfier.checkLocationServices() { settingsAlertMessage(title: "Turn on Location", message: "Turn on")}
-      locationVerfier.checkLocationAuthorization {fetchSpotsOnMap(spots) }
       locationVerfier.locationManger.delegate = self
       
     }

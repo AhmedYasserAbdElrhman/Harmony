@@ -28,6 +28,8 @@
 		2F0ED03C23168EF9004AA810 /* LocationVerfier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0ED03B23168EF9004AA810 /* LocationVerfier.swift */; };
 		2F13D78C23140AC600D15421 /* MyTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F13D78B23140AC600D15421 /* MyTabBar.swift */; };
 		2F1577F32316047F0078468F /* Spot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1577F22316047F0078468F /* Spot.swift */; };
+		2F1FDF22231C11FA00FF4286 /* FilterViewConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1FDF21231C11FA00FF4286 /* FilterViewConfigurator.swift */; };
+		2F1FDF24231C16BD00FF4286 /* FilterViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1FDF23231C16BD00FF4286 /* FilterViewPresenter.swift */; };
 		2FACC34423198BC4000CF618 /* MyFavPlacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FACC34223198BC4000CF618 /* MyFavPlacesViewController.swift */; };
 		2FACC34823198BE8000CF618 /* MyReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FACC34623198BE8000CF618 /* MyReviewViewController.swift */; };
 		7542DABDFEF7F9A582C961F4 /* Pods_Harmony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6C35FC1DFB9B46F2A133A8F /* Pods_Harmony.framework */; };
@@ -57,6 +59,8 @@
 		2F0ED03B23168EF9004AA810 /* LocationVerfier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationVerfier.swift; sourceTree = "<group>"; };
 		2F13D78B23140AC600D15421 /* MyTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTabBar.swift; sourceTree = "<group>"; };
 		2F1577F22316047F0078468F /* Spot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spot.swift; sourceTree = "<group>"; };
+		2F1FDF21231C11FA00FF4286 /* FilterViewConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewConfigurator.swift; sourceTree = "<group>"; };
+		2F1FDF23231C16BD00FF4286 /* FilterViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewPresenter.swift; sourceTree = "<group>"; };
 		2FACC34223198BC4000CF618 /* MyFavPlacesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFavPlacesViewController.swift; sourceTree = "<group>"; };
 		2FACC34623198BE8000CF618 /* MyReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyReviewViewController.swift; sourceTree = "<group>"; };
 		4C147970F06915B993E25F69 /* Pods-Harmony.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Harmony.debug.xcconfig"; path = "Target Support Files/Pods-Harmony/Pods-Harmony.debug.xcconfig"; sourceTree = "<group>"; };
@@ -165,6 +169,8 @@
 			isa = PBXGroup;
 			children = (
 				2F074C09230C52A800B5D2D2 /* FilterViewController.swift */,
+				2F1FDF21231C11FA00FF4286 /* FilterViewConfigurator.swift */,
+				2F1FDF23231C16BD00FF4286 /* FilterViewPresenter.swift */,
 			);
 			path = Filter;
 			sourceTree = "<group>";
@@ -354,6 +360,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2FACC34423198BC4000CF618 /* MyFavPlacesViewController.swift in Sources */,
+				2F1FDF22231C11FA00FF4286 /* FilterViewConfigurator.swift in Sources */,
 				2F074BE62309973100B5D2D2 /* Login.swift in Sources */,
 				2FACC34823198BE8000CF618 /* MyReviewViewController.swift in Sources */,
 				2F074C0C230C57B200B5D2D2 /* CustomSlider.swift in Sources */,
@@ -371,6 +378,7 @@
 				2F074C02230AF97D00B5D2D2 /* MainViewController.swift in Sources */,
 				2F074C12230D66B900B5D2D2 /* NearbyViewController.swift in Sources */,
 				2F074BFE230AF6EE00B5D2D2 /* UIViewExtenstion.swift in Sources */,
+				2F1FDF24231C16BD00FF4286 /* FilterViewPresenter.swift in Sources */,
 				2F074C0F230D4FFF00B5D2D2 /* SideMenuViewController.swift in Sources */,
 				2F074BE42309973100B5D2D2 /* AppDelegate.swift in Sources */,
 			);

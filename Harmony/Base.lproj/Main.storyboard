@@ -306,14 +306,14 @@
                                                             <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="L8Z-Wf-yls">
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="L8Z-Wf-yls">
                                                             <rect key="frame" x="0.0" y="0.0" width="374" height="128"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="128" id="Eir-5z-dvp"/>
                                                                 <constraint firstAttribute="width" constant="374" id="MbP-bN-raW"/>
                                                             </constraints>
                                                         </imageView>
-                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JLm-CK-Ujs" customClass="CosmosView" customModule="Cosmos">
+                                                        <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JLm-CK-Ujs" customClass="CosmosView" customModule="Cosmos">
                                                             <rect key="frame" x="20" y="195" width="140" height="40"/>
                                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <userDefinedRuntimeAttributes>
@@ -771,7 +771,7 @@
                                                     <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="place1" translatesAutoresizingMaskIntoConstraints="NO" id="jHg-XG-S2o">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="place1" translatesAutoresizingMaskIntoConstraints="NO" id="jHg-XG-S2o">
                                                     <rect key="frame" x="2" y="0.0" width="202" height="70"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="70" id="Vd4-6p-UcS"/>
@@ -831,6 +831,7 @@
                             <constraint firstItem="Rhq-mJ-EQU" firstAttribute="top" secondItem="EJO-cg-bvu" secondAttribute="top" id="tEK-jk-o7A"/>
                             <constraint firstItem="Rhq-mJ-EQU" firstAttribute="leading" secondItem="EJO-cg-bvu" secondAttribute="leading" id="uQD-Po-jLC"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="CpL-bX-E6l"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rnn-y5-ZFe" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -845,6 +846,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="qKP-eJ-U6N"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dZq-0S-tQG" userLabel="First Responder" sceneMemberID="firstResponder"/>

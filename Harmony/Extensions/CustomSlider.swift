@@ -10,6 +10,16 @@ import UIKit
 
 @IBDesignable
 class CustomeSlider: UISlider {
+  
+//  override init(frame: CGRect) {
+//    super.init(frame: frame)
+//  }
+//
+//  required init?(coder aDecoder: NSCoder) {
+//    super.init(coder: aDecoder)
+//    fatalError("init(coder:) has not been implemented")
+//  }
+  
   @IBInspectable var thumbImage: UIImage? {
     didSet {
       setThumbImage(thumbImage, for: .normal)
@@ -35,5 +45,24 @@ class CustomeSlider: UISlider {
     
     
   }
+  
+  override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+    super.touchesEnded(touches, with: event)
+    addTextOverSlider(slider: self)
+    
+  }
+  
+  func addTextUpSlider(slider: CustomeSlider) -> CGRect {
+    let sliderTrack = slider.trackRect(forBounds: slider.bounds)
+    let sliderFrame = slider.thumbRect(forBounds: slider.bounds, trackRect: sliderTrack, value: slider.value)
+    return CGRect(x: sliderFrame.origin.x + slider.frame.origin.x + 15 , y: slider.frame.origin.y - 25 ,width: 40,height: 15)
+  }
+  
+  func addTextOverSlider(slider: CustomeSlider) -> CGRect {
+    let sliderTrack = slider.trackRect(forBounds: slider.bounds)
+    let sliderFrame = slider.thumbRect(forBounds: slider.bounds, trackRect: sliderTrack, value: slider.value)
+    return CGRect(x: sliderFrame.origin.x + slider.frame.origin.x + 15 , y: slider.frame.origin.y ,width: 40,height: 15)
+  }
+
   
 }
