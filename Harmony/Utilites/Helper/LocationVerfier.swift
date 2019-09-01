@@ -14,11 +14,14 @@ class LocationVerfier {
   let locationManger = CLLocationManager()
 
 
-  func checkLocationServices(completion: () -> Void)  {
+  func checkLocationServices(completionInFailure: (Bool) -> Void,completeionInSuccess: @escaping () -> Void)  {
     if !CLLocationManager.locationServicesEnabled() {
-      completion()
+      completionInFailure(false)
       print("Turn Location Service")
     } else {
+      checkLocationAuthorization {
+      completeionInSuccess()
+      }
       print("Location Turned on")
     }
   }

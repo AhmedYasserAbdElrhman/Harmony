@@ -30,15 +30,16 @@ class NearbyViewController: UIViewController, CLLocationManagerDelegate {
   
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-      locationVerfier.checkLocationServices() { settingsAlertMessage(title: "Turn on Location", message: "Turn on")}
+      locationVerfier.checkLocationServices( completionInFailure: { _ in settingsAlertMessage(title: "Turn on Location", message: "Turn on")},
+                                             completeionInSuccess: {self.fetchSpotsOnMap(self.spots)})
 
     }
   
-  override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-    locationVerfier.checkLocationAuthorization {fetchSpotsOnMap(spots) }
-    
-    }
+//  override func viewDidAppear(_ animated: Bool) {
+//        super.viewDidAppear(animated)
+//    locationVerfier.checkLocationAuthorization {fetchSpotsOnMap(spots) }
+//    
+//    }
   
     override func viewDidLoad() {
         super.viewDidLoad()

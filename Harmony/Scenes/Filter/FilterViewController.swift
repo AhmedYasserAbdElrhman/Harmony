@@ -8,19 +8,12 @@
 
 import UIKit
 
-class FilterViewController: UIViewController {
+class FilterViewController: UIView {
   
   private let sliderTextLabel = UILabel()
   //How to set label over and upove the slider thumb !!
   
   @IBOutlet weak var sliderBar: CustomeSlider!
-  override func viewDidLoad() {
-    super.viewDidLoad()
-    
-    customizeLabel()
-//    changeTextLabelLocation(sliderBar)
-    
-  }
   
   @IBAction func cancelFilterButtonTapped(_ sender: Any) {
     NotificationCenter.default.post(name: NSNotification.Name("HideFilterMenu"), object: nil)
@@ -28,7 +21,7 @@ class FilterViewController: UIViewController {
   
   @IBAction func sliderMoving(_ sender: CustomeSlider) {
     sliderTextLabel.text = "\(Int(sliderBar.value))"
-    self.view.addSubview(sliderTextLabel)
+    self.addSubview(sliderTextLabel)
     sliderTextLabel.frame = sender.addTextUpSlider(slider: sender)
   }
   
@@ -53,7 +46,7 @@ class FilterViewController: UIViewController {
   
   func changeTextLabelLocation(_ sender: CustomeSlider) {
     sliderTextLabel.text = "\(Int(sliderBar.value))"
-    view.addSubview(sliderTextLabel)
+    self.addSubview(sliderTextLabel)
     sliderTextLabel.frame = sender.addTextOverSlider(slider: sender)
   }
   

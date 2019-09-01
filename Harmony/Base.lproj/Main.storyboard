@@ -396,26 +396,15 @@
                                     <outlet property="delegate" destination="Hl0-9h-lvJ" id="Sbn-7E-h8E"/>
                                 </connections>
                             </tableView>
-                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yyA-I8-z5o">
-                                <rect key="frame" x="0.0" y="-446" width="414" height="403"/>
-                                <connections>
-                                    <segue destination="hfA-T0-DGx" kind="embed" id="Lmd-ih-hkf"/>
-                                </connections>
-                            </containerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Q3t-BT-rVD" firstAttribute="top" secondItem="Ad9-uq-wht" secondAttribute="topMargin" id="23W-sY-0BV"/>
-                            <constraint firstItem="yyA-I8-z5o" firstAttribute="leading" secondItem="ckI-fV-fgd" secondAttribute="leading" id="63m-Vm-rfe"/>
                             <constraint firstItem="Q3t-BT-rVD" firstAttribute="trailing" secondItem="ckI-fV-fgd" secondAttribute="trailing" id="LqV-hW-L9Q"/>
-                            <constraint firstItem="yyA-I8-z5o" firstAttribute="width" secondItem="Ad9-uq-wht" secondAttribute="width" id="MUh-kp-AhN"/>
-                            <constraint firstItem="yyA-I8-z5o" firstAttribute="height" secondItem="Ad9-uq-wht" secondAttribute="height" multiplier="0.45" id="Ncf-js-4a9"/>
                             <constraint firstItem="Q3t-BT-rVD" firstAttribute="leading" secondItem="ckI-fV-fgd" secondAttribute="leading" id="Xw9-OZ-s7Z"/>
                             <constraint firstItem="ckI-fV-fgd" firstAttribute="trailing" secondItem="phk-It-cDi" secondAttribute="trailing" id="bxk-3Y-Bvx"/>
                             <constraint firstItem="phk-It-cDi" firstAttribute="leading" secondItem="ckI-fV-fgd" secondAttribute="leading" id="cDZ-VI-bqP"/>
                             <constraint firstItem="phk-It-cDi" firstAttribute="top" secondItem="Q3t-BT-rVD" secondAttribute="bottom" id="fmf-Rt-QkK"/>
-                            <constraint firstItem="yyA-I8-z5o" firstAttribute="top" secondItem="ckI-fV-fgd" secondAttribute="top" constant="-490" id="iZm-Jx-kUj"/>
-                            <constraint firstItem="ckI-fV-fgd" firstAttribute="trailing" secondItem="yyA-I8-z5o" secondAttribute="trailing" id="nsg-3s-0hb"/>
                             <constraint firstItem="ckI-fV-fgd" firstAttribute="bottom" secondItem="phk-It-cDi" secondAttribute="bottom" id="vDj-wZ-EXs"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ckI-fV-fgd"/>
@@ -427,14 +416,12 @@
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                     <connections>
-                        <outlet property="containerView" destination="yyA-I8-z5o" id="Nnr-YW-pNo"/>
-                        <outlet property="filterMenuConstrains" destination="iZm-Jx-kUj" id="mTC-TW-s12"/>
                         <outlet property="tableView" destination="phk-It-cDi" id="zGD-OK-SAd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gJj-RR-vfl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2416" y="-391"/>
+            <point key="canvasLocation" x="2413" y="-391"/>
         </scene>
         <!--Side Menu View Controller-->
         <scene sceneID="f4R-fp-dVK">
@@ -526,8 +513,8 @@
         <scene sceneID="PUv-Ib-yXp">
             <objects>
                 <viewController storyboardIdentifier="Filter" id="hfA-T0-DGx" customClass="FilterViewController" customModule="Harmony" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="jx9-fI-beh">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="403"/>
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="jx9-fI-beh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AVj-7V-cDQ">
@@ -583,30 +570,30 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="-45" translatesAutoresizingMaskIntoConstraints="NO" id="CsR-O2-nSX">
-                                <rect key="frame" x="18" y="217.5" width="399" height="60"/>
+                                <rect key="frame" x="18" y="217.5" width="399" height="553"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x0X-Gt-Ruk">
-                                        <rect key="frame" x="0.0" y="0.0" width="114" height="60"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="114" height="553"/>
                                         <state key="normal" title="Button" image="filterCat1"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RMi-Y8-S7y">
-                                        <rect key="frame" x="69" y="0.0" width="102" height="60"/>
+                                        <rect key="frame" x="69" y="0.0" width="102" height="553"/>
                                         <state key="normal" title="Button" image="filterCat2"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bmx-DN-GAz">
-                                        <rect key="frame" x="126" y="0.0" width="102" height="60"/>
+                                        <rect key="frame" x="126" y="0.0" width="102" height="553"/>
                                         <state key="normal" title="Button" image="filterCat3"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="00w-6A-oKX">
-                                        <rect key="frame" x="183" y="0.0" width="102" height="60"/>
+                                        <rect key="frame" x="183" y="0.0" width="102" height="553"/>
                                         <state key="normal" title="Button" image="filterCat4"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oHn-E7-OXK">
-                                        <rect key="frame" x="240" y="0.0" width="102" height="60"/>
+                                        <rect key="frame" x="240" y="0.0" width="102" height="553"/>
                                         <state key="normal" title="Button" image="filterCat5"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="auZ-af-UNS">
-                                        <rect key="frame" x="297" y="0.0" width="102" height="60"/>
+                                        <rect key="frame" x="297" y="0.0" width="102" height="553"/>
                                         <state key="normal" title="Button" image="filterCat6"/>
                                     </button>
                                 </subviews>
@@ -615,7 +602,7 @@
                                 </constraints>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Minimal recommendation rate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qfH-Ku-tfZ">
-                                <rect key="frame" x="29" y="302.5" width="228" height="20.5"/>
+                                <rect key="frame" x="29" y="795.5" width="228" height="20.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="228" id="t26-bg-Q8I"/>
                                 </constraints>
@@ -624,7 +611,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="phr-hd-8iy" customClass="CosmosView" customModule="Cosmos">
-                                <rect key="frame" x="20" y="342" width="184" height="35"/>
+                                <rect key="frame" x="20" y="835" width="184" height="35"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="184" id="3Pi-r1-0Ft"/>
@@ -639,7 +626,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NOT BAD." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VS1-eM-k7C">
-                                <rect key="frame" x="252" y="349" width="77" height="21"/>
+                                <rect key="frame" x="252" y="842" width="77" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="77" id="rZo-1b-P1Y"/>
                                     <constraint firstAttribute="height" constant="21" id="v4W-w3-LLb"/>
@@ -685,7 +672,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XQY-1n-kP6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2414" y="-881"/>
+            <point key="canvasLocation" x="2468" y="-1137"/>
         </scene>
         <!--Nearby View Controller-->
         <scene sceneID="mLz-xc-o2i">
