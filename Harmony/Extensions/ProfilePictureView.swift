@@ -16,7 +16,7 @@ class ProfilePictureView: UIImageView {
     }
   }
 
-  func setup() {
+    func setup() {
     switch cornerRaduis {
     case true:
       self.layer.cornerRadius = self.frame.size.height / 2
@@ -24,6 +24,9 @@ class ProfilePictureView: UIImageView {
       self.layer.cornerRadius = 0
     }
   }
+  
+
+  
 
 
 }

@@ -15,6 +15,8 @@ class UserProfileViewController: UIViewController {
   @IBOutlet weak var myFavPlacesView: UIView!
   @IBOutlet weak var myReviewView: UIView!
   @IBOutlet weak var segmentControl: UISegmentedControl!
+  let buttonBar = UIView()
+
   
   override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,6 +30,7 @@ class UserProfileViewController: UIViewController {
     segmentControl.removeAllSegments()
     segmentControl.insertSegment(withTitle: "My Fav Places", at: 0, animated: false)
     segmentControl.insertSegment(withTitle: "My Reviews", at: 1, animated: false)
+    setupButton()
     segmentControl.addTarget(self, action: #selector(segmentSwitchControl(_:)), for: .valueChanged)
     segmentControl.selectedSegmentIndex = 0
     
@@ -66,12 +69,24 @@ class UserProfileViewController: UIViewController {
 //  }
   
   
-  func setupProfilePicture(image: UIImage) {
+  func setupButton() {
+    buttonBar.translatesAutoresizingMaskIntoConstraints = false
+    buttonBar.backgroundColor = UIColor(red: 60/255, green: 179/255, blue: 113/255, alpha: 1)
+    view.addSubview(buttonBar)
+    buttonBar.topAnchor.constraint(equalTo: segmentControl.bottomAnchor).isActive = true
+    buttonBar.heightAnchor.constraint(equalToConstant: 5).isActive = true
+    buttonBar.leftAnchor.constraint(equalTo: segmentControl.leftAnchor).isActive = true
+    buttonBar.widthAnchor.constraint(equalTo: segmentControl.widthAnchor, multiplier: 1 / CGFloat(segmentControl.numberOfSegments)).isActive = true
+    
+    
     
   }
-  
+
   @IBAction func segmentSwitchControl(_ sender: UISegmentedControl) {
     updateView()
+    UIView.animate(withDuration: 0.3) {
+      self.buttonBar.frame.origin.x = (self.segmentControl.frame.width / CGFloat(self.segmentControl.numberOfSegments)) * CGFloat(self.segmentControl.selectedSegmentIndex)
+    }
 
   }
 }

@@ -28,6 +28,8 @@
 		2F0ED03C23168EF9004AA810 /* LocationVerfier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0ED03B23168EF9004AA810 /* LocationVerfier.swift */; };
 		2F13D78C23140AC600D15421 /* MyTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F13D78B23140AC600D15421 /* MyTabBar.swift */; };
 		2F15038C231D735600B362D9 /* ProfilePictureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F15038B231D735600B362D9 /* ProfilePictureView.swift */; };
+		2F15038E231DB6FE00B362D9 /* ProfilePictureLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F15038D231DB6FE00B362D9 /* ProfilePictureLabel.swift */; };
+		2F150390231DBCF400B362D9 /* CustomeSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F15038F231DBCF400B362D9 /* CustomeSegment.swift */; };
 		2F1577F32316047F0078468F /* Spot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1577F22316047F0078468F /* Spot.swift */; };
 		2F1FDF22231C11FA00FF4286 /* FilterViewConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1FDF21231C11FA00FF4286 /* FilterViewConfigurator.swift */; };
 		2F1FDF24231C16BD00FF4286 /* FilterViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1FDF23231C16BD00FF4286 /* FilterViewPresenter.swift */; };
@@ -61,6 +63,8 @@
 		2F0ED03B23168EF9004AA810 /* LocationVerfier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationVerfier.swift; sourceTree = "<group>"; };
 		2F13D78B23140AC600D15421 /* MyTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTabBar.swift; sourceTree = "<group>"; };
 		2F15038B231D735600B362D9 /* ProfilePictureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePictureView.swift; sourceTree = "<group>"; };
+		2F15038D231DB6FE00B362D9 /* ProfilePictureLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePictureLabel.swift; sourceTree = "<group>"; };
+		2F15038F231DBCF400B362D9 /* CustomeSegment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomeSegment.swift; sourceTree = "<group>"; };
 		2F1577F22316047F0078468F /* Spot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spot.swift; sourceTree = "<group>"; };
 		2F1FDF21231C11FA00FF4286 /* FilterViewConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewConfigurator.swift; sourceTree = "<group>"; };
 		2F1FDF23231C16BD00FF4286 /* FilterViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewPresenter.swift; sourceTree = "<group>"; };
@@ -135,6 +139,8 @@
 				2F074C0B230C57B200B5D2D2 /* CustomSlider.swift */,
 				2F13D78B23140AC600D15421 /* MyTabBar.swift */,
 				2F15038B231D735600B362D9 /* ProfilePictureView.swift */,
+				2F15038D231DB6FE00B362D9 /* ProfilePictureLabel.swift */,
+				2F15038F231DBCF400B362D9 /* CustomeSegment.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -378,11 +384,13 @@
 				2F1577F32316047F0078468F /* Spot.swift in Sources */,
 				2F0E4D5923181D2200DD2257 /* UserProfileViewController.swift in Sources */,
 				2F0E4D5423180C4800DD2257 /* NearbyConfigurator.swift in Sources */,
+				2F150390231DBCF400B362D9 /* CustomeSegment.swift in Sources */,
 				2F074C0A230C52A800B5D2D2 /* FilterViewController.swift in Sources */,
 				2F0E4D5623180D4F00DD2257 /* NearbyPresenter.swift in Sources */,
 				2F074BFC230AC6FC00B5D2D2 /* CustomBar.swift in Sources */,
 				2F074C04230AFC2A00B5D2D2 /* MainTableViewCell.swift in Sources */,
 				2F15038C231D735600B362D9 /* ProfilePictureView.swift in Sources */,
+				2F15038E231DB6FE00B362D9 /* ProfilePictureLabel.swift in Sources */,
 				2F074C02230AF97D00B5D2D2 /* MainViewController.swift in Sources */,
 				2F074C12230D66B900B5D2D2 /* NearbyViewController.swift in Sources */,
 				2F074BFE230AF6EE00B5D2D2 /* UIViewExtenstion.swift in Sources */,
