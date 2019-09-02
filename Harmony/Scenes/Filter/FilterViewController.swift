@@ -11,12 +11,25 @@ import UIKit
 class FilterViewController: UIView {
   
   private let sliderTextLabel = UILabel()
-  //How to set label over and upove the slider thumb !!
+  
+  @IBOutlet weak var containerView: UIView!
   
   @IBOutlet weak var sliderBar: CustomeSlider!
   
+  override init(frame: CGRect) {
+    super.init(frame: frame)
+    commonInit()
+  }
+  
+  required init?(coder aDecoder: NSCoder) {
+    fatalError("init(coder:) has not been implemented")
+    commonInit()
+  }
+  
+  
+  
+  
   @IBAction func cancelFilterButtonTapped(_ sender: Any) {
-    NotificationCenter.default.post(name: NSNotification.Name("HideFilterMenu"), object: nil)
   }
   
   @IBAction func sliderMoving(_ sender: CustomeSlider) {
@@ -25,23 +38,16 @@ class FilterViewController: UIView {
     sliderTextLabel.frame = sender.addTextUpSlider(slider: sender)
   }
   
-  
-  
-//  func addTextUpSlider(slider: CustomeSlider) -> CGRect {
-//    let sliderTrack = slider.trackRect(forBounds: slider.bounds)
-//    let sliderFrame = slider.thumbRect(forBounds: slider.bounds, trackRect: sliderTrack, value: slider.value)
-//    return CGRect(x: sliderFrame.origin.x + slider.frame.origin.x + 15 , y: slider.frame.origin.y - 25 ,width: 40,height: 15)
-//  }
-  
-//  func addTextOverSlider(slider: CustomeSlider) -> CGRect {
-//    let sliderTrack = slider.trackRect(forBounds: slider.bounds)
-//    let sliderFrame = slider.thumbRect(forBounds: slider.bounds, trackRect: sliderTrack, value: slider.value)
-//    return CGRect(x: sliderFrame.origin.x + slider.frame.origin.x + 15 , y: slider.frame.origin.y ,width: 40,height: 15)
-//  }
-  
   private func customizeLabel() {
     sliderTextLabel.backgroundColor = .gray
     sliderTextLabel.textAlignment = .center
+  }
+  
+  
+  private func commonInit() {
+    Bundle.main.loadNibNamed("FilterView", owner: self, options: nil)
+    setupFilterViewWithConstrains(self)
+  
   }
   
   func changeTextLabelLocation(_ sender: CustomeSlider) {
@@ -51,5 +57,20 @@ class FilterViewController: UIView {
   }
   
   
-  
+  func setupFilterViewWithConstrains(_ view: UIView) {
+    self.translatesAutoresizingMaskIntoConstraints = false
+    self.frame = view.frame
+    view.addSubview(containerView)
+    UIView.animate(withDuration: 1.0,
+                   delay: 0.5,
+                   options: .curveEaseIn,
+                   animations: {
+                    view.layoutIfNeeded()
+    })
+    view.addConstraint(NSLayoutConstraint(item: self, attribute: .leading, relatedBy: .equal, toItem: view, attribute: .leading, multiplier: 1.0, constant: 0))
+    view.addConstraint(NSLayoutConstraint(item: self, attribute: .trailing, relatedBy: .equal, toItem: view, attribute: .trailing, multiplier: 1.0, constant: 0))
+    view.addConstraint(NSLayoutConstraint(item: self, attribute: .top, relatedBy: .equal, toItem: view, attribute: .top, multiplier: 1.0, constant: 0))
+    view.addConstraint(NSLayoutConstraint(item: self, attribute: .bottom, relatedBy: .equal, toItem: view, attribute: .bottom, multiplier: 1.0, constant: 0))
+    
+  }
 }

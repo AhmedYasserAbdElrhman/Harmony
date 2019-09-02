@@ -10,20 +10,14 @@ import UIKit
 import CoreLocation
 
 class LocationVerfier {
-  
+    
   let locationManger = CLLocationManager()
 
 
-  func checkLocationServices(completionInFailure: (Bool) -> Void,completeionInSuccess: @escaping () -> Void)  {
-    if !CLLocationManager.locationServicesEnabled() {
-      completionInFailure(false)
-      print("Turn Location Service")
-    } else {
-      checkLocationAuthorization {
-      completeionInSuccess()
-      }
-      print("Location Turned on")
-    }
+  func checkLocationServices(closure: (Bool) -> ()) {
+    
+    closure(CLLocationManager.locationServicesEnabled())
+    
   }
   
   func checkLocationAuthorization(completion: () -> Void) {

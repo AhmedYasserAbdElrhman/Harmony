@@ -11,14 +11,7 @@ import UIKit
 @IBDesignable
 class CustomeSlider: UISlider {
   
-//  override init(frame: CGRect) {
-//    super.init(frame: frame)
-//  }
-//
-//  required init?(coder aDecoder: NSCoder) {
-//    super.init(coder: aDecoder)
-//    fatalError("init(coder:) has not been implemented")
-//  }
+  private var sliderLabel = UILabel()
   
   @IBInspectable var thumbImage: UIImage? {
     didSet {
@@ -31,9 +24,6 @@ class CustomeSlider: UISlider {
       setThumbImage(didSetFunc(), for: .highlighted)
     }
   }
-  
-  
-  // Changing size of the slider thumb !!
   
   func didSetFunc() -> UIImage {
     UIGraphicsBeginImageContext(thumbImage!.size)
@@ -48,8 +38,7 @@ class CustomeSlider: UISlider {
   
   override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
     super.touchesEnded(touches, with: event)
-    addTextOverSlider(slider: self)
-    
+    self.addSubview(setupLabel(with: addTextOverSlider(slider: self)))
   }
   
   func addTextUpSlider(slider: CustomeSlider) -> CGRect {
@@ -62,6 +51,14 @@ class CustomeSlider: UISlider {
     let sliderTrack = slider.trackRect(forBounds: slider.bounds)
     let sliderFrame = slider.thumbRect(forBounds: slider.bounds, trackRect: sliderTrack, value: slider.value)
     return CGRect(x: sliderFrame.origin.x + slider.frame.origin.x + 15 , y: slider.frame.origin.y ,width: 40,height: 15)
+  }
+  
+  
+  func setupLabel(with rect: CGRect) -> UIView {
+    sliderLabel.text = "\(Int(value))"
+    sliderLabel.frame = rect
+    sliderLabel.textColor = .white
+    return sliderLabel
   }
 
   

@@ -22,14 +22,6 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
   override func viewDidLoad() {
     super.viewDidLoad()
     configureTableViewBackground()
-    NotificationCenter.default.addObserver(self,
-                                           selector: #selector(hideFilterMenu),
-                                           name: NSNotification.Name("HideFilterMenu"),
-                                           object: nil)
-    NotificationCenter.default.addObserver(self,
-                                           selector: #selector(toggleFilterMenu),
-                                           name: NSNotification.Name("ToggleFilterMenu"),
-                                           object: nil)
   }
   
   func configureTableViewBackground( ){
@@ -61,31 +53,37 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
   }
   
   
-  @objc func toggleFilterMenu() {
-    self.filterMenuOpen = true
-    self.filterMenuConstrains.constant = 0
-    UIView.animate(withDuration: 1.0,
-                   delay: 0.5,
-                   options: .curveEaseIn,
-                   animations: {
-                    self.view.layoutIfNeeded()                    
-    })
-  }
-  
-  @objc func hideFilterMenu() {
-    self.filterMenuOpen = false
-    self.filterMenuConstrains.constant = -490
-    UIView.animate(withDuration: 1.0,
-                   delay: 0.5,
-                   options: .curveEaseOut,
-                   animations: {
-                    self.view.layoutIfNeeded()
-                    
-    })
-  }
+//  @objc func toggleFilterMenu() {
+//    self.filterMenuOpen = true
+//    self.filterMenuConstrains.constant = 0
+//    UIView.animate(withDuration: 1.0,
+//                   delay: 0.5,
+//                   options: .curveEaseIn,
+//                   animations: {
+//                    self.view.layoutIfNeeded()                    
+//    })
+//  }
+//  
+//  @objc func hideFilterMenu() {
+//    self.filterMenuOpen = false
+//    self.filterMenuConstrains.constant = -490
+//    UIView.animate(withDuration: 1.0,
+//                   delay: 0.5,
+//                   options: .curveEaseOut,
+//                   animations: {
+//                    self.view.layoutIfNeeded()
+//                    
+//    })
+//  }
   
   @IBAction func filterButtonTapped(_ sender: Any) {
-    toggleFilterMenu()
+    let filterView = FilterViewController()
+    self.view.addSubview(filterView)
+    self.view.bringSubviewToFront(filterView)
+    self.view.isUserInteractionEnabled = false
+    filterView.didMoveToSuperview()
+    
+
     
   }
   

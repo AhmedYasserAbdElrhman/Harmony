@@ -30,16 +30,21 @@ class NearbyViewController: UIViewController, CLLocationManagerDelegate {
   
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-      locationVerfier.checkLocationServices( completionInFailure: { _ in settingsAlertMessage(title: "Turn on Location", message: "Turn on")},
-                                             completeionInSuccess: {self.fetchSpotsOnMap(self.spots)})
+      locationVerfier.checkLocationServices() { status in
+        switch status {
+          case true:
+            locationVerfier.checkLocationAuthorization {
+              fetchSpotsOnMap(spots)
+            }
+          case false:
+            settingsAlertMessage(title: "Turn om Location", message: "Turn on")
+        }
+      }
+//      locationVerfier.checkLocationServices( completionInFailure: { _ in settingsAlertMessage(title: "Turn on Location", message: "Turn on")},
+//                                             completeionInSuccess: {self.fetchSpotsOnMap(self.spots)})
 
     }
   
-//  override func viewDidAppear(_ animated: Bool) {
-//        super.viewDidAppear(animated)
-//    locationVerfier.checkLocationAuthorization {fetchSpotsOnMap(spots) }
-//    
-//    }
   
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,13 +54,11 @@ class NearbyViewController: UIViewController, CLLocationManagerDelegate {
     
 
   @IBAction func filterButtonTapped(_ sender: UIBarButtonItem) {
-    let storyBoard = UIStoryboard(name: "Main", bundle: .main)
-    let filterView = storyBoard.instantiateViewController(withIdentifier: "Filter")
-    self.addChild(filterView)
-    self.view.addSubview(filterView.view)
-    filterView.view.translatesAutoresizingMaskIntoConstraints = false
-    filterView.view.center = CGPoint(x: self.view.bounds.midX, y: self.view.bounds.midY)
-    filterView.didMove(toParent: self)
+    let filterView = FilterViewController()
+    self.view.addSubview(filterView)
+    filterView.containerView.center = CGPoint(x: self.view.bounds.midX, y: self.view.bounds.midY)
+    filterView.didMoveToSuperview()
+    
   }
   
   
