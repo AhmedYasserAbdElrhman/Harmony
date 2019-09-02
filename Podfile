@@ -7,4 +7,5 @@ target 'Harmony' do
 
   # Pods for Harmony
 pod 'Cosmos'
+pod 'SwiftCharts'
 end

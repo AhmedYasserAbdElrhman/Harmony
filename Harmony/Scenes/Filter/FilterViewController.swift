@@ -59,8 +59,8 @@ class FilterViewController: UIView {
   
   func setupFilterViewWithConstrains(_ view: UIView) {
     self.translatesAutoresizingMaskIntoConstraints = false
+    self.addSubview(containerView)
     self.frame = view.frame
-    view.addSubview(containerView)
     UIView.animate(withDuration: 1.0,
                    delay: 0.5,
                    options: .curveEaseIn,
