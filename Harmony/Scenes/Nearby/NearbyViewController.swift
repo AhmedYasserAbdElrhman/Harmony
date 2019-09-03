@@ -54,9 +54,9 @@ class NearbyViewController: UIViewController, CLLocationManagerDelegate {
     
 
   @IBAction func filterButtonTapped(_ sender: UIBarButtonItem) {
-    let filterView = FilterViewController()
+    let filterView = FilterView()
     self.view.addSubview(filterView)
-    filterView.containerView.center = CGPoint(x: self.view.bounds.midX, y: self.view.bounds.midY)
+//    filterView.containerView.center = CGPoint(x: self.view.bounds.midX, y: self.view.bounds.midY)
     filterView.didMoveToSuperview()
     
   }

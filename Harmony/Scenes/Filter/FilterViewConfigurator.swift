@@ -9,11 +9,11 @@
 import Foundation
 
 protocol FilterViewConfigurator {
-  func configure(viewController: FilterViewController)
+  func configure(viewController: FilterView)
 }
 
 class FilterViewConfiguratorImplementation: FilterViewConfigurator {
-  func configure(viewController: FilterViewController) {
+  func configure(viewController: FilterView) {
     
   }
   

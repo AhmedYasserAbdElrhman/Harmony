@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Harmony/Extensions/CustomSlider.swift"
-            timestampString = "589154004.5341589"
+            timestampString = "589204608.82286"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "51"
-            endingLineNumber = "51"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
             landmarkName = "addTextOverSlider(slider:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Harmony/Scenes/Filter/FilterViewController.swift"
-            timestampString = "589154004.534258"
+            timestampString = "589198070.418342"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "56"
-            endingLineNumber = "56"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
             landmarkName = "changeTextLabelLocation(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -42,7 +42,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Harmony/Scenes/Filter/FilterViewController.swift"
-            timestampString = "589154004.534348"
+            timestampString = "589198070.420964"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "38"
@@ -54,15 +54,15 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Harmony/Extensions/CustomSlider.swift"
-            timestampString = "589154004.534439"
+            timestampString = "589204608.82303"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "45"
-            endingLineNumber = "45"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
             landmarkName = "addTextUpSlider(slider:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -74,11 +74,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Harmony/Extensions/CustomSlider.swift"
-            timestampString = "589154004.5344909"
+            timestampString = "589204608.823085"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "41"
-            endingLineNumber = "41"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
             landmarkName = "touchesEnded(_:with:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -90,7 +90,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Harmony/Scenes/Nearby/NearbyViewController.swift"
-            timestampString = "589154004.534543"
+            timestampString = "589204608.823135"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "49"
@@ -106,7 +106,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Harmony/Scenes/Nearby/NearbyViewController.swift"
-            timestampString = "589154004.534601"
+            timestampString = "589204608.823182"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "31"
@@ -122,7 +122,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Harmony/AppDelegate.swift"
-            timestampString = "589154004.534676"
+            timestampString = "589200667.500708"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "32"
@@ -138,7 +138,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Harmony/AppDelegate.swift"
-            timestampString = "589154004.534732"
+            timestampString = "589200667.5007499"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "22"
@@ -170,7 +170,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Harmony/Scenes/Nearby/NearbyViewController.swift"
-            timestampString = "589154004.534848"
+            timestampString = "589204608.823361"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "32"
@@ -186,7 +186,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Harmony/Scenes/Nearby/NearbyViewController.swift"
-            timestampString = "589154004.534904"
+            timestampString = "589204608.8234071"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "33"
@@ -202,7 +202,7 @@
                   moduleName = "Harmony"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/biko/Documents/Projects/Harmony/Harmony/Scenes/Nearby/NearbyViewController.swift"
-                  timestampString = "589154004.9423029"
+                  timestampString = "589204154.106015"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "33"
@@ -217,7 +217,7 @@
                   moduleName = "Harmony"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/biko/Documents/Projects/Harmony/Harmony/Scenes/Nearby/NearbyViewController.swift"
-                  timestampString = "589154004.943975"
+                  timestampString = "589204154.108034"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "35"
@@ -262,11 +262,11 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Harmony/Scenes/Main/MainViewController.swift"
-            timestampString = "589154004.5350651"
+            timestampString = "589204608.823542"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "80"
@@ -282,11 +282,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Harmony/Scenes/Filter/FilterViewController.swift"
-            timestampString = "589154004.5351321"
+            timestampString = "589198070.422202"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "60"
-            endingLineNumber = "60"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
             landmarkName = "setupFilterViewWithConstrains(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -298,7 +298,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Harmony/Scenes/Filter/FilterViewController.swift"
-            timestampString = "589154004.535212"
+            timestampString = "589198070.422685"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "47"
@@ -330,23 +330,55 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Harmony/Scenes/Filter/FilterViewController.swift"
-            timestampString = "589154004.535439"
+            timestampString = "589198070.423154"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "19"
             endingLineNumber = "19"
             landmarkName = "init(frame:)"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Harmony/Scenes/Filter/FilterView.swift"
+            timestampString = "589204608.823832"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "FilterView"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Harmony/Scenes/Filter/FilterView.swift"
+            timestampString = "589204608.8239191"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "11"
+            endingLineNumber = "11"
+            landmarkName = "FilterView"
+            landmarkType = "3">
             <Locations>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "Harmony.FilterViewController.__allocating_init(frame: __C.CGRect) -&gt; Harmony.FilterViewController"
+                  symbolName = "Harmony.FilterView.__allocating_init(frame: __C.CGRect) -&gt; Harmony.FilterView"
                   moduleName = "Harmony"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/biko/Documents/Projects/Harmony/Harmony/Scenes/Filter/FilterViewController.swift"
-                  timestampString = "589154005.003612"
+                  urlString = "file:///Users/biko/Documents/Projects/Harmony/Harmony/Scenes/Filter/FilterView.swift"
+                  timestampString = "589204066.680872"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -354,21 +386,257 @@
                   offsetFromSymbolStart = "12">
                </Location>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "Harmony.FilterViewController.init(frame: __C.CGRect) -&gt; Harmony.FilterViewController"
+                  symbolName = "Harmony.FilterView.init(frame: __C.CGRect) -&gt; Harmony.FilterView"
                   moduleName = "Harmony"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/biko/Documents/Projects/Harmony/Harmony/Scenes/Filter/FilterViewController.swift"
-                  timestampString = "589154005.0056289"
+                  urlString = "file:///Users/biko/Documents/Projects/Harmony/Harmony/Scenes/Filter/FilterView.swift"
+                  timestampString = "589204066.682447"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "13"
                   endingLineNumber = "13"
-                  offsetFromSymbolStart = "60">
+                  offsetFromSymbolStart = "56">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Harmony.FilterView.__allocating_init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;Harmony.FilterView&gt;"
+                  moduleName = "Harmony"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/biko/Documents/Projects/Harmony/Harmony/Scenes/Filter/FilterView.swift"
+                  timestampString = "589204066.684058"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Harmony.FilterView.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;Harmony.FilterView&gt;"
+                  moduleName = "Harmony"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/biko/Documents/Projects/Harmony/Harmony/Scenes/Filter/FilterView.swift"
+                  timestampString = "589204066.685727"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "86">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Harmony.FilterView.__deallocating_deinit"
+                  moduleName = "Harmony"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/biko/Documents/Projects/Harmony/Harmony/Scenes/Filter/FilterView.swift"
+                  timestampString = "589204066.687277"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
                </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Harmony/Scenes/Main/MainViewController.swift"
+            timestampString = "589204608.8239779"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "82"
+            endingLineNumber = "82"
+            landmarkName = "filterButtonTapped(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Harmony/Scenes/Main/MainViewController.swift"
+            timestampString = "589204608.8240319"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "83"
+            endingLineNumber = "83"
+            landmarkName = "filterButtonTapped(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Harmony/Scenes/Main/MainViewController.swift"
+            timestampString = "589204608.824082"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "84"
+            endingLineNumber = "84"
+            landmarkName = "filterButtonTapped(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Harmony/Scenes/Filter/FilterView.swift"
+            timestampString = "589204608.8241349"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "sliderTextLabel"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; __C.UILabel in variable initialization expression of Harmony.FilterView.(sliderTextLabel in _511713FBC7005E55A610035955465859) : __C.UILabel"
+                  moduleName = "Harmony"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/biko/Documents/Projects/Harmony/Harmony/Scenes/Filter/FilterView.swift"
+                  timestampString = "589204066.703382"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "14">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Harmony.FilterView.init(frame: __C.CGRect) -&gt; Harmony.FilterView"
+                  moduleName = "Harmony"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/biko/Documents/Projects/Harmony/Harmony/Scenes/Filter/FilterView.swift"
+                  timestampString = "589204066.7049789"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "56">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Harmony.FilterView.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;Harmony.FilterView&gt;"
+                  moduleName = "Harmony"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/biko/Documents/Projects/Harmony/Harmony/Scenes/Filter/FilterView.swift"
+                  timestampString = "589204066.70647"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "86">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Harmony/Scenes/Filter/FilterView.swift"
+            timestampString = "589204608.824182"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "sliderTextLabel"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Harmony.FilterView.init(frame: __C.CGRect) -&gt; Harmony.FilterView"
+                  moduleName = "Harmony"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/biko/Documents/Projects/Harmony/Harmony/Scenes/Filter/FilterView.swift"
+                  timestampString = "589204066.711165"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "115">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Harmony.FilterView.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;Harmony.FilterView&gt;"
+                  moduleName = "Harmony"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/biko/Documents/Projects/Harmony/Harmony/Scenes/Filter/FilterView.swift"
+                  timestampString = "589204066.712719"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "116">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Harmony/Extensions/CustomSlider.swift"
+            timestampString = "589204608.824227"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
+            landmarkName = "setupLabel(with:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Harmony/Extensions/CustomSlider.swift"
+            timestampString = "589204608.824273"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
+            landmarkName = "setupLabel(with:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

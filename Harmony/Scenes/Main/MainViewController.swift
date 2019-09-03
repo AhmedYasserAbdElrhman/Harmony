@@ -77,12 +77,15 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
 //  }
   
   @IBAction func filterButtonTapped(_ sender: Any) {
-    let filterView = FilterViewController()
-    self.view.addSubview(filterView)
-    self.view.bringSubviewToFront(filterView)
-    self.view.isUserInteractionEnabled = false
-    filterView.didMoveToSuperview()
-    
+    let _ = FilterView()
+//    let name = String(describing: type(of: self))
+    if let filterView = Bundle.main.loadNibNamed("FilterView", owner: self, options: nil)?.first as? FilterView {
+      self.view.addSubview(filterView)
+      self.view.bringSubviewToFront(filterView)
+      filterView.didMoveToSuperview()
+      
+    }
+//    let filterView = nib.instantiate(withOwner: self, options: nil
 
     
   }

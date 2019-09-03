@@ -36,6 +36,12 @@ class CustomeSlider: UISlider {
     
   }
   
+  override func beginTracking(_ touch: UITouch, with event: UIEvent?) -> Bool {
+    super.beginTracking(touch, with: event)
+    sliderLabel.removeFromSuperview()
+    return true
+  }
+  
   override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
     super.touchesEnded(touches, with: event)
     self.addSubview(setupLabel(with: addTextOverSlider(slider: self)))
@@ -48,15 +54,17 @@ class CustomeSlider: UISlider {
   }
   
   func addTextOverSlider(slider: CustomeSlider) -> CGRect {
-    let sliderTrack = slider.trackRect(forBounds: slider.bounds)
-    let sliderFrame = slider.thumbRect(forBounds: slider.bounds, trackRect: sliderTrack, value: slider.value)
-    return CGRect(x: sliderFrame.origin.x + slider.frame.origin.x + 15 , y: slider.frame.origin.y ,width: 40,height: 15)
+    let sliderTrack = trackRect(forBounds: bounds)
+    let sliderFrame = thumbRect(forBounds: bounds, trackRect: sliderTrack, value: value)
+    return CGRect(x: sliderFrame.origin.x + frame.origin.x + 10 , y: frame.origin.y - 150,width: 40,height: 15)
   }
   
   
   func setupLabel(with rect: CGRect) -> UIView {
     sliderLabel.text = "\(Int(value))"
+    sliderLabel.textAlignment = .center
     sliderLabel.frame = rect
+    sliderLabel.backgroundColor = .gray
     sliderLabel.textColor = .white
     return sliderLabel
   }
