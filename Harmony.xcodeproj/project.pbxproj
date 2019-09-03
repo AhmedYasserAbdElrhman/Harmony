@@ -31,6 +31,8 @@
 		2F15038E231DB6FE00B362D9 /* ProfilePictureLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F15038D231DB6FE00B362D9 /* ProfilePictureLabel.swift */; };
 		2F150390231DBCF400B362D9 /* CustomeSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F15038F231DBCF400B362D9 /* CustomeSegment.swift */; };
 		2F1577F32316047F0078468F /* Spot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1577F22316047F0078468F /* Spot.swift */; };
+		2F1ECDC0231EC66400448269 /* AddNewSpotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1ECDBF231EC66400448269 /* AddNewSpotViewController.swift */; };
+		2F1ECDC2231EC72A00448269 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1ECDC1231EC72A00448269 /* ImagePicker.swift */; };
 		2F1FDF22231C11FA00FF4286 /* FilterViewConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1FDF21231C11FA00FF4286 /* FilterViewConfigurator.swift */; };
 		2F1FDF24231C16BD00FF4286 /* FilterViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1FDF23231C16BD00FF4286 /* FilterViewPresenter.swift */; };
 		2F1FDF26231C282B00FF4286 /* FilterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F1FDF25231C282B00FF4286 /* FilterView.xib */; };
@@ -66,6 +68,8 @@
 		2F15038D231DB6FE00B362D9 /* ProfilePictureLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePictureLabel.swift; sourceTree = "<group>"; };
 		2F15038F231DBCF400B362D9 /* CustomeSegment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomeSegment.swift; sourceTree = "<group>"; };
 		2F1577F22316047F0078468F /* Spot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spot.swift; sourceTree = "<group>"; };
+		2F1ECDBF231EC66400448269 /* AddNewSpotViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewSpotViewController.swift; sourceTree = "<group>"; };
+		2F1ECDC1231EC72A00448269 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		2F1FDF21231C11FA00FF4286 /* FilterViewConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewConfigurator.swift; sourceTree = "<group>"; };
 		2F1FDF23231C16BD00FF4286 /* FilterViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewPresenter.swift; sourceTree = "<group>"; };
 		2F1FDF25231C282B00FF4286 /* FilterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilterView.xib; sourceTree = "<group>"; };
@@ -198,6 +202,7 @@
 		2F074C10230D669600B5D2D2 /* Nearby */ = {
 			isa = PBXGroup;
 			children = (
+				2F1ECDBE231EC64900448269 /* AddNewSpot */,
 				2F074C11230D66B900B5D2D2 /* NearbyViewController.swift */,
 				2F0E4D5323180C4800DD2257 /* NearbyConfigurator.swift */,
 				2F0E4D5523180D4F00DD2257 /* NearbyPresenter.swift */,
@@ -226,6 +231,7 @@
 			isa = PBXGroup;
 			children = (
 				2F0ED03B23168EF9004AA810 /* LocationVerfier.swift */,
+				2F1ECDC1231EC72A00448269 /* ImagePicker.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -236,6 +242,14 @@
 				2F1577F22316047F0078468F /* Spot.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		2F1ECDBE231EC64900448269 /* AddNewSpot */ = {
+			isa = PBXGroup;
+			children = (
+				2F1ECDBF231EC66400448269 /* AddNewSpotViewController.swift */,
+			);
+			path = AddNewSpot;
 			sourceTree = "<group>";
 		};
 		2FACC33D23198AB6000CF618 /* ContainerView */ = {
@@ -375,6 +389,7 @@
 				2FACC34423198BC4000CF618 /* MyFavPlacesViewController.swift in Sources */,
 				2F1FDF22231C11FA00FF4286 /* FilterViewConfigurator.swift in Sources */,
 				2F074BE62309973100B5D2D2 /* Login.swift in Sources */,
+				2F1ECDC2231EC72A00448269 /* ImagePicker.swift in Sources */,
 				2FACC34823198BE8000CF618 /* MyReviewViewController.swift in Sources */,
 				2F074C0C230C57B200B5D2D2 /* CustomSlider.swift in Sources */,
 				2F13D78C23140AC600D15421 /* MyTabBar.swift in Sources */,
@@ -387,6 +402,7 @@
 				2F150390231DBCF400B362D9 /* CustomeSegment.swift in Sources */,
 				2F074C0A230C52A800B5D2D2 /* FilterView.swift in Sources */,
 				2F0E4D5623180D4F00DD2257 /* NearbyPresenter.swift in Sources */,
+				2F1ECDC0231EC66400448269 /* AddNewSpotViewController.swift in Sources */,
 				2F074BFC230AC6FC00B5D2D2 /* CustomBar.swift in Sources */,
 				2F074C04230AFC2A00B5D2D2 /* MainTableViewCell.swift in Sources */,
 				2F15038C231D735600B362D9 /* ProfilePictureView.swift in Sources */,

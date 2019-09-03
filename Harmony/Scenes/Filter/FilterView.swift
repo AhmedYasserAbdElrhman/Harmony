@@ -36,6 +36,7 @@ class FilterView: UIView {
   
   
   @IBAction func cancelFilterButtonTapped(_ sender: Any) {
+    self.removeFromSuperview()
   }
   
   @IBAction func sliderMoving(_ sender: CustomeSlider) {

@@ -48,17 +48,20 @@ class NearbyViewController: UIViewController, CLLocationManagerDelegate {
   
     override func viewDidLoad() {
         super.viewDidLoad()
+      fetchLocationOnMap()
       locationVerfier.locationManger.delegate = self
       
     }
     
 
   @IBAction func filterButtonTapped(_ sender: UIBarButtonItem) {
-    let filterView = FilterView()
-    self.view.addSubview(filterView)
-//    filterView.containerView.center = CGPoint(x: self.view.bounds.midX, y: self.view.bounds.midY)
-    filterView.didMoveToSuperview()
-    
+    let _ = FilterView()
+    if let filterView = Bundle.main.loadNibNamed("FilterView", owner: self, options: nil)?.first as? FilterView {
+      self.view.addSubview(filterView)
+      self.view.bringSubviewToFront(filterView)
+      filterView.didMoveToSuperview()
+    }
+
   }
   
   
@@ -71,6 +74,20 @@ class NearbyViewController: UIViewController, CLLocationManagerDelegate {
       mapView.addAnnotation(annotations)
     }
   }
+  
+  func fetchLocationOnMap() {
+    let location = CLLocationCoordinate2D(latitude: spots[0].lattitude, longitude: spots[0].longtitude)
+    let region = MKCoordinateRegion(center: location, span: MKCoordinateSpan(latitudeDelta: 0.005, longitudeDelta: 0.005))
+    mapView.setRegion(region, animated: true)
+  }
+  
+  
+  @IBAction func addNewSPotButton(_ sender: UIButton) {
+    let storyboard = UIStoryboard(name: "Main", bundle: nil)
+    let controller = storyboard.instantiateViewController(withIdentifier: "AddNewSpotViewController")
+    self.present(controller, animated: true, completion: nil)
 
+  }
+  
   
 }
