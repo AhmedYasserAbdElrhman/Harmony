@@ -18,19 +18,19 @@ class FilterView: UIView {
   }()
 
   
-//  @IBOutlet weak var containerView: UIView!
+  @IBOutlet weak var containerView: UIView!
   
   @IBOutlet weak var sliderBar: CustomeSlider!
   
-//  override init(frame: CGRect) {
-//    super.init(frame: frame)
-//    commonInit()
-//  }
-//  
-//  required init?(coder aDecoder: NSCoder) {
-//    fatalError("init(coder:) has not been implemented")
-//    commonInit()
-//  }
+  override init(frame: CGRect) {
+    super.init(frame: frame)
+    commonInit()
+  }
+  
+  required init?(coder aDecoder: NSCoder) {
+    fatalError("init(coder:) has not been implemented")
+    commonInit()
+  }
   
   
   
@@ -57,14 +57,33 @@ class FilterView: UIView {
 
   
   
-//  private func commonInit() {
-//    let name = String(describing: type(of: self))
-//    let nib = UINib(nibName: name, bundle: .main)
-//    nib.instantiate(withOwner: self, options: nil)
-////    setupFilterViewWithConstrains(self)
+  private func commonInit() {
+    
+    backgroundColor = .clear
+    
+    containerView = loadViewFromNib()
+    containerView.frame = bounds
+    containerView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+    containerView.translatesAutoresizingMaskIntoConstraints = true
+    
+    addSubview(containerView)
+
+//    Bundle.main.loadNibNamed("FilterView", owner: self, options: nil)
+//    guard let content = containerView else { return }
+//    content.frame = self.bounds
+//    content.autoresizingMask = [.flexibleHeight, .flexibleWidth]
+//    self.addSubview(content)
 //
-//  }
+  }
   
+  
+  private func loadViewFromNib() -> UIView {
+    let bundle = Bundle(for: type(of:self))
+    let nib = UINib(nibName: String(describing: type(of:self)), bundle: bundle)
+    let nibView = nib.instantiate(withOwner: self, options: nil).first as! UIView
+    return nibView
+  }
+
 //  func changeTextLabelLocation(_ sender: CustomeSlider) {
 //    sliderTextLabel.text = "\(Int(sliderBar.value))"
 //    self.addSubview(sliderTextLabel)
