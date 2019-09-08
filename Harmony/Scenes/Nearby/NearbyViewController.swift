@@ -40,9 +40,6 @@ class NearbyViewController: UIViewController, CLLocationManagerDelegate {
             settingsAlertMessage(title: "Turn om Location", message: "Turn on")
         }
       }
-//      locationVerfier.checkLocationServices( completionInFailure: { _ in settingsAlertMessage(title: "Turn on Location", message: "Turn on")},
-//                                             completeionInSuccess: {self.fetchSpotsOnMap(self.spots)})
-
     }
   
   
@@ -52,15 +49,21 @@ class NearbyViewController: UIViewController, CLLocationManagerDelegate {
       locationVerfier.locationManger.delegate = self
       
     }
+  
+  func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
+    switch status {
+    case .authorizedAlways, .authorizedWhenInUse:
+      fetchSpotsOnMap(spots)
+    default:
+      break
+    }
+  }
     
 
   @IBAction func filterButtonTapped(_ sender: UIBarButtonItem) {
-    let _ = FilterView()
-    if let filterView = Bundle.main.loadNibNamed("FilterView", owner: self, options: nil)?.first as? FilterView {
-      self.view.addSubview(filterView)
-      self.view.bringSubviewToFront(filterView)
-      filterView.didMoveToSuperview()
-    }
+    let uiView = FilterView(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height/2))
+    let currentWindow: UIWindow? = UIApplication.shared.keyWindow
+    currentWindow?.addSubview(uiView)
 
   }
   

@@ -15,16 +15,19 @@ class DesinableTextField: UITextField {
       updateView()
     }
   }
+  
   @IBInspectable var borderColor: UIColor? {
     didSet {
       layer.borderColor = borderColor?.cgColor
     }
   }
+  
   @IBInspectable var borderWidth: CGFloat = 0 {
     didSet {
       layer.borderWidth = borderWidth
     }
   }
+  
   func updateView() {
     if let image = leftImage {
       leftViewMode = .always

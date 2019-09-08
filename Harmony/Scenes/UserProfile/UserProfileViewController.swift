@@ -61,14 +61,7 @@ class UserProfileViewController: UIViewController {
     
   }
   
-  
-//  func addContainerViewAsChild(containerView: UIViewController) {
-//    addChild(containerView)
-//    view.addSubview(containerView.view)
-//    containerView.didMove(toParent: self)
-//  }
-  
-  
+    
   func setupButton() {
     buttonBar.translatesAutoresizingMaskIntoConstraints = false
     buttonBar.backgroundColor = UIColor(red: 60/255, green: 179/255, blue: 113/255, alpha: 1)
@@ -76,7 +69,8 @@ class UserProfileViewController: UIViewController {
     buttonBar.topAnchor.constraint(equalTo: segmentControl.bottomAnchor).isActive = true
     buttonBar.heightAnchor.constraint(equalToConstant: 5).isActive = true
     buttonBar.leftAnchor.constraint(equalTo: segmentControl.leftAnchor).isActive = true
-    buttonBar.widthAnchor.constraint(equalTo: segmentControl.widthAnchor, multiplier: 1 / CGFloat(segmentControl.numberOfSegments)).isActive = true
+    buttonBar.widthAnchor.constraint(equalTo: segmentControl.widthAnchor,
+                                     multiplier: 1 / CGFloat(segmentControl.numberOfSegments)).isActive = true
     
     
     

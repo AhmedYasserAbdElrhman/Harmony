@@ -10,7 +10,7 @@ import UIKit
 
 class FilterView: UIView {
   
-  private let sliderTextLabel: UILabel =  {
+  private var sliderTextLabel: UILabel =  {
     let lbl = UILabel()
     lbl.textAlignment = .center
     lbl.backgroundColor = .gray
@@ -40,9 +40,7 @@ class FilterView: UIView {
   }
   
   @IBAction func sliderMoving(_ sender: CustomeSlider) {
-    sliderTextLabel.text = "\(Int(sliderBar.value))"
-    self.addSubview(sliderTextLabel)
-    sliderTextLabel.frame = sender.addTextUpSlider(slider: sender)
+    sender.addTextUpSlider()
   }
   
   @IBAction func sliderStartMoving(_ sender: CustomeSlider) {
@@ -67,13 +65,6 @@ class FilterView: UIView {
     containerView.translatesAutoresizingMaskIntoConstraints = true
     
     addSubview(containerView)
-
-//    Bundle.main.loadNibNamed("FilterView", owner: self, options: nil)
-//    guard let content = containerView else { return }
-//    content.frame = self.bounds
-//    content.autoresizingMask = [.flexibleHeight, .flexibleWidth]
-//    self.addSubview(content)
-//
   }
   
   
@@ -83,35 +74,5 @@ class FilterView: UIView {
     let nibView = nib.instantiate(withOwner: self, options: nil).first as! UIView
     return nibView
   }
-
-//  func changeTextLabelLocation(_ sender: CustomeSlider) {
-//    sliderTextLabel.text = "\(Int(sliderBar.value))"
-//    self.addSubview(sliderTextLabel)
-//    sliderTextLabel.frame = sender.addTextOverSlider(slider: sender)
-//  }
-  
-  
-//  func setupFilterViewWithConstrains(_ view: UIView) {
-//    self.addSubview(containerView)
-////    self.translatesAutoresizingMaskIntoConstraints = false
-////    self.frame = view.frame
-////    UIView.animate(withDuration: 1.0,
-////                   delay: 0.5,
-////                   options: .curveEaseIn,
-////                   animations: {
-////                    view.layoutIfNeeded()
-////    })
-//    NSLayoutConstraint.activate([
-//      self.containerView.topAnchor.constraint(equalTo: self.topAnchor),
-//      self.containerView.bottomAnchor.constraint(equalTo: self.bottomAnchor),
-//      self.containerView.leadingAnchor.constraint(equalTo: self.leadingAnchor),
-//      self.containerView.trailingAnchor.constraint(equalTo: self.trailingAnchor),
-//      ])
-
-//    view.addConstraint(NSLayoutConstraint(item: self, attribute: .leading, relatedBy: .equal, toItem: view, attribute: .leading, multiplier: 1.0, constant: 0))
-//    view.addConstraint(NSLayoutConstraint(item: self, attribute: .trailing, relatedBy: .equal, toItem: view, attribute: .trailing, multiplier: 1.0, constant: 0))
-//    view.addConstraint(NSLayoutConstraint(item: self, attribute: .top, relatedBy: .equal, toItem: view, attribute: .top, multiplier: 1.0, constant: 0))
-//    view.addConstraint(NSLayoutConstraint(item: self, attribute: .bottom, relatedBy: .equal, toItem: view, attribute: .bottom, multiplier: 1.0, constant: 0))
-    
   }
 

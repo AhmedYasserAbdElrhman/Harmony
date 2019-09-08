@@ -52,41 +52,14 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     return 250.0
   }
   
-  
-//  @objc func toggleFilterMenu() {
-//    self.filterMenuOpen = true
-//    self.filterMenuConstrains.constant = 0
-//    UIView.animate(withDuration: 1.0,
-//                   delay: 0.5,
-//                   options: .curveEaseIn,
-//                   animations: {
-//                    self.view.layoutIfNeeded()                    
-//    })
-//  }
-//  
-//  @objc func hideFilterMenu() {
-//    self.filterMenuOpen = false
-//    self.filterMenuConstrains.constant = -490
-//    UIView.animate(withDuration: 1.0,
-//                   delay: 0.5,
-//                   options: .curveEaseOut,
-//                   animations: {
-//                    self.view.layoutIfNeeded()
-//                    
-//    })
-//  }
-  
   @IBAction func filterButtonTapped(_ sender: Any) {
-    let _ = FilterView()
-//    let name = String(describing: type(of: self))
-    if let filterView = Bundle.main.loadNibNamed("FilterView", owner: self, options: nil)?.first as? FilterView {
-      self.view.addSubview(filterView)
-      self.view.bringSubviewToFront(filterView)
-      filterView.didMoveToSuperview()
-      
-    }
-//    let filterView = nib.instantiate(withOwner: self, options: nil
-
+    
+    
+    let uiView = FilterView(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height/2))
+    
+    self.view.bringSubviewToFront(uiView)
+    
+    self.view.addSubview(uiView)
     
   }
   

@@ -44,19 +44,19 @@ class CustomeSlider: UISlider {
   
   override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
     super.touchesEnded(touches, with: event)
-    self.addSubview(setupLabel(with: addTextOverSlider(slider: self)))
+    self.addSubview(setupLabel(with: addTextOverSlider()))
   }
   
-  func addTextUpSlider(slider: CustomeSlider) -> CGRect {
-    let sliderTrack = slider.trackRect(forBounds: slider.bounds)
-    let sliderFrame = slider.thumbRect(forBounds: slider.bounds, trackRect: sliderTrack, value: slider.value)
-    return CGRect(x: sliderFrame.origin.x + slider.frame.origin.x + 15 , y: slider.frame.origin.y - 25 ,width: 40,height: 15)
-  }
-  
-  func addTextOverSlider(slider: CustomeSlider) -> CGRect {
+  func addTextUpSlider() {
     let sliderTrack = trackRect(forBounds: bounds)
     let sliderFrame = thumbRect(forBounds: bounds, trackRect: sliderTrack, value: value)
-    return CGRect(x: sliderFrame.origin.x + frame.origin.x + 10 , y: frame.origin.y - 150,width: 40,height: 15)
+    self.addSubview(setupLabel(with: CGRect(x: sliderFrame.origin.x + 10, y: sliderFrame.origin.y - 10,width: 40,height: 15)))
+  }
+  
+  func addTextOverSlider() -> CGRect {
+    let sliderTrack = trackRect(forBounds: bounds)
+    let sliderFrame = thumbRect(forBounds: bounds, trackRect: sliderTrack, value: value)
+    return CGRect(x: sliderFrame.midX - 15, y: sliderFrame.midY - 10, width: 40, height: 15)
   }
   
   

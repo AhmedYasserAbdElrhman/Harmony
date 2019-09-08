@@ -365,7 +365,7 @@
                                                                 <constraint firstAttribute="width" constant="374" id="MbP-bN-raW"/>
                                                             </constraints>
                                                         </imageView>
-                                                        <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JLm-CK-Ujs" customClass="CosmosView" customModule="Cosmos">
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JLm-CK-Ujs" customClass="CosmosView" customModule="Cosmos">
                                                             <rect key="frame" x="20" y="195" width="140" height="40"/>
                                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <userDefinedRuntimeAttributes>
@@ -798,6 +798,9 @@
                                     <navigationItem title="Add New Spot" id="PAn-os-cCc">
                                         <barButtonItem key="leftBarButtonItem" title="Cancel" id="S9d-iG-Y1f">
                                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <connections>
+                                                <action selector="cancelButton:" destination="rkj-nc-rbz" id="BZI-Fz-fHg"/>
+                                            </connections>
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" title="Save" id="PQr-79-pgE">
                                             <color key="tintColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

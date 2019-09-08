@@ -14,7 +14,6 @@ class AddNewSpotViewController: UIViewController {
   override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
     
 
@@ -22,6 +21,10 @@ class AddNewSpotViewController: UIViewController {
     ImagePickerManager().pickImage(self) { image in
       self.coverButton.setImage(image, for: .normal)
     }
+  }
+  
+  @IBAction func cancelButton(_ sender: UIBarButtonItem) {
+    dismiss(animated: true, completion: nil)
   }
   
 }
