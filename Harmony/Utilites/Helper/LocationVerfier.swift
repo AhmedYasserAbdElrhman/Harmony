@@ -15,7 +15,6 @@ class LocationVerfier {
 
 
   func checkLocationServices(closure: (Bool) -> ()) {
-    
     closure(CLLocationManager.locationServicesEnabled())
     
   }

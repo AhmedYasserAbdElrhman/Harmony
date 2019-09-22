@@ -365,7 +365,7 @@
                                                                 <constraint firstAttribute="width" constant="374" id="MbP-bN-raW"/>
                                                             </constraints>
                                                         </imageView>
-                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JLm-CK-Ujs" customClass="CosmosView" customModule="Cosmos">
+                                                        <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JLm-CK-Ujs" customClass="CosmosView" customModule="Cosmos">
                                                             <rect key="frame" x="20" y="195" width="140" height="40"/>
                                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <userDefinedRuntimeAttributes>
@@ -629,7 +629,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wKt-oL-Bbe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1010" y="388"/>
+            <point key="canvasLocation" x="1009" y="413"/>
         </scene>
         <!--My Fav Places View Controller-->
         <scene sceneID="3e7-sZ-b0K">
@@ -782,7 +782,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EEM-DX-7un" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2022" y="388"/>
+            <point key="canvasLocation" x="2022" y="413"/>
         </scene>
         <!--Add New Spot View Controller-->
         <scene sceneID="bhx-3U-DL5">

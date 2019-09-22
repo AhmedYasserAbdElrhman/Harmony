@@ -7,6 +7,9 @@
 //
 
 import UIKit
+protocol FilterViewProtocol {
+  func cancelButton()
+}
 
 class FilterView: UIView {
   
@@ -16,6 +19,8 @@ class FilterView: UIView {
     lbl.backgroundColor = .gray
     return lbl
   }()
+  
+  var delegate: FilterViewProtocol?
 
   
   @IBOutlet weak var containerView: UIView!
@@ -33,10 +38,9 @@ class FilterView: UIView {
   }
   
   
-  
-  
   @IBAction func cancelFilterButtonTapped(_ sender: Any) {
-    self.removeFromSuperview()
+    delegate?.cancelButton()
+    
   }
   
   @IBAction func sliderMoving(_ sender: CustomeSlider) {
@@ -63,6 +67,7 @@ class FilterView: UIView {
     containerView.frame = bounds
     containerView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
     containerView.translatesAutoresizingMaskIntoConstraints = true
+    
     
     addSubview(containerView)
   }

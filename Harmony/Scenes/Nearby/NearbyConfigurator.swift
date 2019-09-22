@@ -15,7 +15,7 @@ protocol NearbyConfigurator {
 class NearbyConfiguratorImplementation: NearbyConfigurator {
   func configure(viewController: NearbyViewController) {
     let presenter = NearbyPresenterImplementation(view: viewController)
-//    viewController.presenter = presenter
+    viewController.presenter = presenter
     
   }
   

@@ -9,12 +9,16 @@
 import UIKit
 import SwiftCharts
 
-class UserProfileViewController: UIViewController {
+protocol UserProfileView {
+  
+}
+class UserProfileViewController: UIViewController, UserProfileView {
 
   @IBOutlet weak var chartView: UIView!
   @IBOutlet weak var myFavPlacesView: UIView!
   @IBOutlet weak var myReviewView: UIView!
   @IBOutlet weak var segmentControl: UISegmentedControl!
+  var presenter: UserProfilePresenter?
   let buttonBar = UIView()
 
   

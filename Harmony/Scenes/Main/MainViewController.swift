@@ -18,6 +18,7 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
   
   var cellViewBackground: UIColor?
   var filterMenuOpen: Bool!
+  var uiView: FilterView!
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -53,14 +54,26 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
   }
   
   @IBAction func filterButtonTapped(_ sender: Any) {
-    
-    
-    let uiView = FilterView(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height/2))
-    
+    uiView = FilterView(frame: CGRect(x: 0, y: -450, width: self.view.frame.width, height: self.view.frame.height/2))
+    uiView.delegate = self
     self.view.bringSubviewToFront(uiView)
     
     self.view.addSubview(uiView)
+    UIView.animate(withDuration: 1.0, delay: 0.5, options: .curveEaseIn, animations: {
+      self.uiView.frame.origin = CGPoint(x: 0, y: 0)
+      }, completion: nil)
     
   }
   
+}
+
+extension MainViewController: FilterViewProtocol{
+  func cancelButton() {
+    UIView.animate(withDuration: 1.0, delay: 0.5, options: .curveEaseOut, animations: {
+      self.uiView.frame.origin = CGPoint(x: 0, y: -450)
+    }, completion: { _ in
+      self.uiView.removeFromSuperview()
+    })
+  }
+
 }
